@@ -24,14 +24,71 @@
                 <a id="current" title="Portfolio" href="#">Portfolio</a>
 
                 <hr class="hSeparator">
-        </div>
+            </div>
         </header> 
 
-        <div id="div_games">
+            <div id="div_games">
+                <a class="link" id="gameLink_OCT" title="OCT" onclick="toggleGameCaptures(1)">Overcrowded: Tycoon</a>
+                |
+                <a class="link" id="gameLink_TH" title="TH" onclick="toggleGameCaptures(2)">Tiny Hunters</a>
+                |
+                <a class="link" id="gameLink_CTR" title="CTR" onclick="toggleGameCaptures(3)">Cut the Rope</a>
+                |
                 <a class="link" id="gameLink_Tools" title="Tools" onclick="toggleGameCaptures(4)">Tools</a>
                 |
-                <a class="link" id="gameLink_Other" title="Tools" onclick="toggleGameCaptures(5)">Personal projects</a>
-        </div>
+                <a class="link" id="gameLink_PersonalProjects" title="PersonalProjects" onclick="toggleGameCaptures(5)">Personal projects</a>
+            </div>
+        
+            <!--OCT-->
+            <div class="contentDiv" id="gameDiv_1">
+                <h1>Overcrowded: Tycoon</h1>
+                <hr class="hSeparator"/>
+                
+                <iframe width="100%" height="36%" src="https://www.youtube.com/embed/so4yoEVdMVk?si=q6aJs6ougmhbhwk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2>My contribution</h2>
+                <p>
+                    In this project, I was responsible for implementing several core gameplay features based on the requests from design side.
+                    I was responsible for implementing the logic behind the new gameplay features, including analytics, tutorials, and everything related.
+                    <br><br>
+                    One of the gameplay features I implemented was the money vault. Which let the user gain coins while offline and retrieve them when entering the game again.
+                    <br><br>
+                </p>
+
+            </div>
+
+            <!--TH-->
+            <div class="contentDiv" id="gameDiv_2">
+                <h1>Tiny Hunters</h1>
+                <hr class="hSeparator"/>
+                
+                <iframe width="100%" height="36%" src="https://www.youtube.com/embed/TD0eBGhgn5E?si=0hYR2KAYboie-FGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2>My contribution</h2>
+                <p>
+                    In this project, I was responsible for implementing and optimizing several core features that enhanced both the gameplay experience and the technical performance of the game.
+                    I implemented analytic events, enabling data-driven decision-making, and ads placements for monetization purposes. Additionally, I also added in-app placements.
+                    <br><br>
+                    I was also involved in building and optimizing the gameplay systems. This included coding the logic behind new hunter characters and their unique abilities, as well as developing the framework for quests, game modes, and innovative game mechanics. I worked closely with the game design team to ensure these features were well-integrated and balanced within the gameplay loop.
+                    <br><br>
+                    One of the features I implemented was a quests system so that players could level up hunters to unlock new possibilities with them. This system was designed to be flexible and scalable, allowing for easy addition of new quests and challenges in the future.
+                </p>
+               
+            </div>
+
+            <!--CTR-->
+            <div class="contentDiv" id="gameDiv_3">
+                <h1>Cut the Rope</h1>
+                <hr class="hSeparator"/>
+                
+                <iframe width="100%" height="36%" src="https://www.youtube.com/embed/1JpdW-D6c14?si=caESMBCmHEj7np05" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2>My contribution</h2>
+                <p>
+                    I cannot share too much information about this project, but I can say that I was responsible for implementing the logic behind some core game mechanics and other meta features.
+                </p>
+            </div>
+
             <!--Tools-->
             <div class="contentDiv" id="gameDiv_4">
                 <h1>Tools</h1>
@@ -118,7 +175,6 @@
                 <div class="imgBlock">
                     <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/1.png" title="" alt=""/>
                     <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/2.png" title="" alt=""/>
-                    <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/3.png" title="" alt=""/>
                 </div>
 
                 <p>
@@ -148,7 +204,6 @@
                 <div class="imgBlock">
                     <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/1.jpg" title="" alt=""/>
                     <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/2.jpg" title="" alt=""/>
-                    <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/3.jpg" title="" alt=""/>
                 </div>
 
                 <p>
@@ -169,7 +224,6 @@
                 <div class="imgBlock">
                     <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/1.png" title="" alt=""/>
                     <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/2.png" title="" alt=""/>
-                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/3.png" title="" alt=""/>
                 </div>
 
                 <p>
@@ -192,7 +246,6 @@
                 <div class="imgBlock">
                     <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/1.png" title="" alt=""/>
                     <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/2.png" title="" alt=""/>
-                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/3.png" title="" alt=""/>
                 </div>
 
                 <p>
@@ -213,7 +266,6 @@
                 <div class="imgBlock">
                     <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/1.png" title="" alt=""/>
                     <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/2.png" title="" alt=""/>
-                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/3.png" title="" alt=""/>
                 </div>
 
                 <p>
@@ -225,11 +277,9 @@
                     This game was developed during a GameJam, an event where several groups of people have to develop a videogame in 48 hours. High Five was awarded the prize for the best game and art direction, making it the winner of this game jam. The game was developed by a team made of six people, what improved my skill when working as a part of a development team.
                 </p>
             </div>
-        </div>
 
         <!--Page ending-->
         <footer id="footer"></footer>
         <script src="Scripts/footer.js"></script>
-        </div>
     </body>
 </html>

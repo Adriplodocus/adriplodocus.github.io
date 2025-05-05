@@ -98,7 +98,7 @@ footer{
 }
 
 .gameCapture{
-    max-width: 250px; /* o el tamaño que prefieras */
+    max-width: 45%; /* o el tamaño que prefieras */
     height: auto;
     border: 2px solid black;
 }
@@ -107,7 +107,6 @@ footer{
     height: 90%;
     width: 55%;
     margin: auto;
-    padding-top: 1%;
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;  
