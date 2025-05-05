@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adrián DG. Desarrollador de videojuegos y aplicaciones</title>
+
+        <!--META-->
+        <meta charset="utf-8">
+
+        <!--CSS REFS-->
+        <link rel="stylesheet" type="text/css" href="Style/style.css">
+
+        <!--SCRIPTS REFS-->
+        <script type="text/javascript" src="Scripts/general.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="sections">
+                <a title="Index" href="index.html">Index</a>
+                |
+                <a title="CV" href="CV.html">Cv</a>
+                |
+                <a title="Portfolio" href="Portfolio.html">Portfolio</a>
+
+                <hr class="hSeparator">
+            </div>
+        </header>
+
+        <section>
+            <div class="containerDiv">
+                <div class="containedDiv">
+                    <form class="centeredForm">
+                        <p>Name:</p>
+                        <input class="input" type="text" placeholder="Introduce your name here." name="nameInput"> 
+                        <p>E-mail:</p>
+                        <input class="input" type="email" placeholder="Introduce your e-mail here." name="emailInput"> 
+                        <p>Message:</p>
+                        <textarea class="input" placeholder="Introduce your message here." name="messageInput" ></textarea>
+                        
+                        <br>
+
+                        <!--Check-->
+                        <p><input type="checkbox" id="check"/>Acepto la política de uso de datos.</p>
+
+                        <!--Form buttons-->
+                        <div class="formButtonsDiv">
+                            <input class="formButton" type="button" value="Submit" onclick="checkForm(this.form)" />
+                            <input class="formButton" type="reset" value="Reset form"/>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Page ending-->
+        <footer id="footer"></footer>
+        <script src="Scripts/footer.js"></script>
+    </body>
+</html>

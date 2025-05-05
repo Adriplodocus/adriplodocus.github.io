@@ -1,0 +1,177 @@
+/*
+Color palette used: https://colorhunt.co/palette/3a3845f7ccacc69b7b826f66
+Background color: #3A3845
+Titles color: #C69B7B
+Text color: #F7CCAC
+Separation lines color: #826F66
+*/
+
+/*IMPORTS*/
+@font-face {
+    font-family: Louis;
+    src: url(../Fonts/Louis.ttf);
+}
+
+/*GENERALS*/
+body{
+    background-color: #3A3845;
+    font-family: Louis;
+}
+
+span{
+    display: inline-block;
+}
+
+a{
+    color: #F7CCAC;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    color: #C69B7B;
+    font-style: italic;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+p{
+   color: #F7CCAC;
+   font-size: 17px;
+}
+
+textarea{
+    height: 15pc;
+}
+
+table{
+    color: #F7CCAC;
+    font-size: 17px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1%;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+/*CLASSES*/
+.formButton{
+    font-family: Louis;
+    font-size: 17px;
+    width: 49%;
+    height: 3pc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formButtonsDiv{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link:hover{
+    cursor:pointer;
+}
+
+.hSeparator{
+    border: 0.5px;
+    border-style: solid;
+    border-color: #826F66;
+}
+
+.gameCapture{
+    max-width: 250px; /* o el tamaño que prefieras */
+    height: auto;
+    border: 2px solid black;
+}
+
+.containedDiv{
+    height: 100%;
+    width: 50%;
+    margin:auto;
+    padding-top: 1%;
+    position: relative;
+}
+
+.sections{
+    text-align: center;
+    word-spacing: 5pc;
+    font-size: larger;
+    width: 100%;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.imgBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* espacio entre imágenes */
+    justify-content: center; /* opcional, centra las imágenes */
+    align-items: center; /* alinea verticalmente si tienen diferente altura */
+    flex-wrap: wrap; /* para que bajen en pantallas pequeñas */
+}
+
+.centeredForm{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    font-family: Louis;
+    font-size: 17px;
+    margin-left: 2%;
+    width: 30pc;
+}
+
+/*IDS*/
+#gameDiv_1, #gameDiv_2, #gameDiv_3, #gameDiv_4, #gameDiv_5{
+    visibility: hidden;
+    width: 1250x;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#geometricWarsImg{
+    width: 20pc;
+}
+
+#div_games{
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+}
+
+#img_myself{
+    position: relative;
+    float:left;
+    width: 25pc;
+}
+.cv_wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img_cv {
+    max-width: 90%;
+    max-height: 80vh;
+    border: 4px solid black;
+    object-fit: contain;
+}
+#current{
+    font-weight: bold;
+    color:azure;
+}
