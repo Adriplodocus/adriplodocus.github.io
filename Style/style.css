@@ -92,12 +92,28 @@ footer{
     border: 2px solid black;
 }
 
-.containedDiv{
+.containedDiv {
     height: 100%;
     width: 50%;
-    margin:auto;
+    margin: auto;
     padding-top: 1%;
     position: relative;
+}
+
+/* Ajuste para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .containedDiv {
+        width: 90%;
+        padding-top: 2%;
+    }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .containedDiv {
+        width: 95%;
+        padding-top: 3%;
+    }
 }
 
 .sections{
