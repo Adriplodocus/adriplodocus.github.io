@@ -13,6 +13,17 @@ Separation lines color: #826F66
 }
 
 /*GENERALS*/
+html, body {
+    height: auto;
+    min-height: 100%;
+  }
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
 body{
     background-color: #3A3845;
     font-family: Louis;
@@ -92,17 +103,26 @@ footer{
     border: 2px solid black;
 }
 
-.containedDiv {
-    height: 100%;
+.contentDiv{
+    height: 90%;
     width: 55%;
     margin: auto;
     padding-top: 1%;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;  
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+.inner_section {
+    padding-bottom: 4rem;
+    overflow: auto; /* o hidden */
+  }
 
 /* Ajuste para pantallas medianas (tablets) */
 @media (max-width: 1024px) {
-    .containedDiv {
+    .contentDiv {
         width: 90%;
         padding-top: 2%;
     }
@@ -110,7 +130,7 @@ footer{
 
 /* Ajuste para pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
-    .containedDiv {
+    .contentDiv {
         width: 95%;
         padding-top: 3%;
     }
@@ -150,7 +170,7 @@ footer{
 }
 
 /*IDS*/
-#gameDiv_1, #gameDiv_2, #gameDiv_3, #gameDiv_4, #gameDiv_5{
+#gameDiv_1, #gameDiv_2, #gameDiv_3, #gameDiv_4, #gameDiv_5, #gameDiv_6, #gameDiv_7, #gameDiv_7, #gameDiv_8, #gameDiv_9, #gameDiv_10, #gameDiv_11, #gameDiv_12, #gameDiv_13, #gameDiv_14, #gameDiv_15{
     visibility: hidden;
     width: 1250x;
     left: 0;

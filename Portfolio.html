@@ -13,7 +13,7 @@
         <script type="text/javascript" src="Scripts/general.js"></script>
     </head>
 
-    <body onload='toggleGameCaptures(1)'>
+    <body onload='toggleGameCaptures(5)'>
         <!--Top of page-->
         <header>
             <div class="sections">
@@ -25,171 +25,211 @@
 
                 <hr class="hSeparator">
         </div>
-        </header>  
+        </header> 
 
-        <section>
-            <div id="div_games">
-                <a class="link" id="gameLink_breadOfTheWild" title="Bread of the Wild" onclick="toggleGameCaptures(1)">Bread of the Wild</a>
+        <div id="div_games">
+                <a class="link" id="gameLink_Tools" title="Tools" onclick="toggleGameCaptures(4)">Tools</a>
                 |
-                <a class="link" id="gameLink_highFive" title="High five" onclick="toggleGameCaptures(2)">High five</a>
-                |
-                <a class="link" id="gameLink_guysThatRun" title="Guys that run" onclick="toggleGameCaptures(3)">Guys that run</a>
-                |
-                <a class="link" id="gameLink_dontGetAnyCloser" title="Don't Get Any Closer" onclick="toggleGameCaptures(4)">Don't Get Any Closer</a>
-                |
-                <a class="link" id="gameLink_geometricWars" title="Geometric wars" onclick="toggleGameCaptures(5)">Geometric wars</a>
+                <a class="link" id="gameLink_Other" title="Tools" onclick="toggleGameCaptures(5)">Personal projects</a>
+        </div>
+            <!--Tools-->
+            <div class="contentDiv" id="gameDiv_4">
+                <h1>Tools</h1>
+                <hr class="hSeparator"/>
+
+                <p>
+                    All tools mentioned here are ready to be imported using Unity's package manager.
+                </p>
+
+                <h2>Objects pool</h2>
+                <p>
+                    A ready-to-use package that handles objects instantiation via object pool using Unity's object pool system.
+                    <p>
+                        <a class="link" href="https://github.com/Adriplodocus/ObjectsPool" target="_blank">Check its Github page.</a>
+                    </p>
+                </p>
+
+                <h2>Code snippet timer</h2>
+                <p>
+                    A tiny tool I created to measure how much time it takes for a code snippet to be executed.
+                    <p>
+                        <a class="link" href="https://github.com/Adriplodocus/CodeSnippetTimer" target="_blank">Check its Github page.</a>
+                    </p>
+                </p>
+
+                <h2>Tickets</h2>
+                <p>
+                    This system let us use tickets for handling behaviours so that we can avoid, for example, unpausing the game if there's a pause ticket still active.
+                    <p>
+                        <a class="link" href="https://github.com/Adriplodocus/Tickets" target="_blank">Check its Github page.</a>
+                    </p>
+                </p>
+
+                <h2>Logger</h2>
+                <p>
+                    Quick and easy to use logger system. It allows you to log messages in a very simple way. I have some updates in mind that I will implement in the future.
+                    <p>
+                        <a class="link" href="https://github.com/Adriplodocus/Logger" target="_blank">Check its Github page.</a>
+                    </p>
+                </p>
+
+                <h2>Editor scenes loader</h2>
+                <p>
+                    Let us switch between scenes quickly from a menu in the editor. It is completely ready to be implemented in any project.
+                    <p>
+                        <a class="link" href="https://github.com/Adriplodocus/EditorScenesLoader" target="_blank">Check its Github page.</a>
+                    </p>
+                </p>
             </div>
-        </section>
 
-        <!--Page content-->
-        <section style="height: 85pc;">
-            <div class="containerDiv">
-                <!--Bread of the Wild-->
-                <div class="containedDiv" id="gameDiv_1">
-                    <h1>Bread of the Wild</h1>
-                    <hr class="hSeparator" />
-                    <br>
-
-                    <div class="imgBlock">
-                        <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/1.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/2.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/3.png" title="" alt=""/>
-                    </div>
-
-                    <h2>The game</h2>
-                    <p>
-                        In Bread of the Wild, you help Bro advance on his ninja training by delivering those breads to an unknown receiver through a sequence of levels based on platforms and obstacles avoidance.
-                        The game is based on games like "Celeste", "Super meat boy" and "I wanna be the guy".
-                    </p>
-
-                    <h2>The developer would like to highlight</h2>
-                    <p>
-                        In addition to character control, other elements I would like to highlight are the interactive objects you can find inside the game. You can easily create new ones making it possible to add new levels really quickly.
-                    </p>
-
-                    <p>
-                        The game can also be played on Android devices and will son be available on Google’s Play Store.
-                    </p>
-                        
-                    <p>
-                        ScriptableObjects has greatly improved project optimization. They have been used on the audio, interactions and levels systems.
-                    </p>
-                    
-                    <p>
-                         <a class="link" href="https://klypp.itch.io/bread-of-the-wild" title="Bread of the wild itch.io link" target="_blank">Try it out!</a> 
-                    </p> 
+            <!--Personal projects-->
+            <div class="contentDiv" id="gameDiv_5">
+                <!--Astra-->
+                <h2>Astra</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <video width="640" height="480" autoplay muted>
+                        <source src="Imgs/GamesCaptures/Astra/1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
+
+                <p>
+                    A personal project in which I aimed to take on the challenge of developing a highly ambitious game. It is still in development.  
+                </p>
+                <p>
+                    We use Zenject as our dependency injector, which has allowed us to scale the code and optimize the use of services in a very simple way.
+                    Additionally, we have also implemented Unity Analytics for future use, to evaluate which would be the best direction to take the development based on player performance.
+                </p>
+                <p>
+                    Multiple possibilities have been implemented for player control at the level, offering a dynamic, fast-paced, and fun gameplay experience.
+                    </p>
+                    <p>
+                    The damage system has been designed so that we can easily control the properties of each attack: damage value, whether it can be countered, and so on.
+                    </p>
+                    <p>
+                    The save system is based on encrypted JSON files and is centralized, making it very easy for developers to add new information to be saved.
+                </p>
+
                 
-                <!--High Five-->
-                <div class="containedDiv" id="gameDiv_2">
-                    <h1>High Five</h1>
-                    <hr class="hSeparator" />
-                    <br>
-
-                    <div class="imgBlock">
-                        <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/1.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/2.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/3.png" title="" alt=""/>
-                    </div>
-
-                    <h2>The game</h2>
-                    <p>
-                        Two players have to fight in order to be the last one standing over the platform. There are two characters full of personality available to use in order to make the other player fall off the platform. But there is more. The game includes several power ups and players will also have to pay attention to its environment, as it will be disappearing as the time goes by.
-                        Choose between two levels and and show you are the best.                        
-                    </p>
-
-                    <h2>The developer would like to highlight</h2>
-                    <p>
-                        This game was developed during a GameJam, an event where several groups of people have to develop a videogame in 48 hours. High Five was awarded the prize for the best game and art direction, making it the winner of this game jam. The game was developed by a team made of six people, what improved my skill when working as a part of a development team.
-                    </p>
+                <!--Bread of the Wild-->
+                <h2>Bread of the Wild</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/1.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/2.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/3.png" title="" alt=""/>
                 </div>
 
-                <!--Guys that run-->
-                <div class="containedDiv" id="gameDiv_3">
-                    <h1>Guys that run</h1>
-                    <hr class="hSeparator" />
-                    <br>
+                <p>
+                    In Bread of the Wild, you help Bro advance on his ninja training by delivering those breads to an unknown receiver through a sequence of levels based on platforms and obstacles avoidance.
+                    The game is based on games like "Celeste", "Super meat boy" and "I wanna be the guy".
+                </p>
 
-                    <div class="imgBlock">
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/1.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/2.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/3.png" title="" alt=""/>
-                    </div>
+                <p>
+                    In addition to character control, other elements I would like to highlight are the interactive objects you can find inside the game. You can easily create new ones making it possible to add new levels really quickly.
+                </p>
 
-                    <h2>The game</h2>
-                    <p>
-                        GameJam project. Guys that Run faces two players that would have to fight to be the last one alive. As they run infinitely, they will have to use their blasters to beat the other player and get the victory. 
-                    </p>
-                    <p> 
-                        But there is more! Pay attention to the obstacles as they can make you fall and lose the game!
-                    </p>
-
-                    <h2>The developer would like to highlight</h2>
-                    <p>
-                        Winner of the best game prize because how enjoyable is it to play, its mechanics and the team work made it possible to create a complete game.     
-                    </p>
+                <p>
+                    The game can also be played on Android devices and will son be available on Google’s Play Store.
+                </p>
+                    
+                <p>
+                    ScriptableObjects has greatly improved project optimization. They have been used on the audio, interactions and levels systems.
+                </p>
+                
+                <p>
+                    <a class="link" href="https://klypp.itch.io/bread-of-the-wild" title="Bread of the wild itch.io link" target="_blank">Try it out!</a> 
+                </p> 
+                
+                <!--Don't Get Any Closer-->
+                <h2>Don't Get Any Closer</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/1.jpg" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/2.jpg" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/3.jpg" title="" alt=""/>
                 </div>
 
-                <!--Don't get any closer-->
-                <div class="containedDiv" id="gameDiv_4">
-                    <h1>Don't Get Any Closer</h1>
-                    <hr class="hSeparator" />
-                    <br>
+                <p>
+                    GameJam project. The aim of the player is to avoid skeletons to reach the castle doors by tapping the inputs they have on their head. The limitation we had to implement is the gameplay coulnd't last more than 20 seconds.                    
+                </p>
+                    
+                <p>
+                    I was mentoring a junior developer during the project. I am really proud of how he improved his skills and how we worked together to make this game possible.
+                </p>
 
-                    <div class="imgBlock">
-                        <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/1.jpg" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/2.jpg" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/3.jpg" title="" alt=""/>
-                    </div>
-
-                    <h2>The game</h2>
-                    <p>
-                        GameJam project. The aim of the player is to avoid skeletons to reach the castle doors by tapping the inputs they have on their head. The limitation we had to implement is the gameplay coulnd't last more than 20 seconds.                    
-                    </p>
-                        
-                    <h2>The developer would like to highlight</h2>
-                    <p>
-                        I was mentoring a junior developer during the project. I am really proud of how he improved his skills and how we worked together to make this game possible.
-                    </p>
-
-                    <p>
-                        <a class="link" href="https://krakengamesstudio.itch.io/dont-get-any-closer" title="Don't Get Any Closer Itch.io link" target="_blank">Try it out!</a>
-                     </p>
-                </div>
-
+                <p>
+                    <a class="link" href="https://krakengamesstudio.itch.io/dont-get-any-closer" title="Don't Get Any Closer Itch.io link" target="_blank">Try it out!</a>
+                </p>
+                
                 <!--Geometric Wars-->
-                <div class="containedDiv" id="gameDiv_5">
-                    <h1>Geometric Wars</h1>
-                    <hr class="hSeparator"/>
-                    <br>
-
-                    <div class="imgBlock">
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/1.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/2.png" title="" alt=""/>
-                        <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/3.png" title="" alt=""/>
-                    </div>
-
-                    <h2>The game</h2>
-                    <p>
-                        This is a personal project. As soon as I finished this master degree and outside of work I wanted to develop my own games and this is the first one that came out on Play Store.
-                    </p>
-                    <p>                         
-                        The player controls a spaceship that has to protect its planet from an unexpected attack which origin is completely unknown.
-                    </p>
-
-                    <h2>The developer would like to highlight</h2>
-                    <p>
-                        I was really interested on creating a videogame with fast and enjoyable matches. I decided to release the game on Android because it is easier to reach more people.
-                    </p>
-                    <p>
-                        I feel especially proud of enemies’ behaviour. The way it was created makes it very easy to create new ones without coding. Including Google’s API is also something I am proud of.
-                    </p>
+                <h2>Geometric Wars</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/1.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/2.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/3.png" title="" alt=""/>
                 </div>
+
+                <p>
+                    This is a personal project. As soon as I finished this master degree and outside of work I wanted to develop my own games and this is the first one that came out on Play Store.
+                </p>
+                <p>                         
+                    The player controls a spaceship that has to protect its planet from an unexpected attack which origin is completely unknown.
+                </p>
+
+                <p>
+                    I was really interested on creating a videogame with fast and enjoyable matches. I decided to release the game on Android because it is easier to reach more people.
+                </p>
+                <p>
+                    I feel especially proud of enemies’ behaviour. The way it was created makes it very easy to create new ones without coding. Including Google’s API is also something I am proud of.
+                </p>
+                
+                <!--Guys That Run-->
+                <h2>Guys That Run</h2> 
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/1.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/2.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/3.png" title="" alt=""/>
+                </div>
+
+                <p>
+                    GameJam project. Guys that Run faces two players that would have to fight to be the last one alive. As they run infinitely, they will have to use their blasters to beat the other player and get the victory. 
+                </p>
+                <p> 
+                    But there is more! Pay attention to the obstacles as they can make you fall and lose the game!
+                </p>
+
+                <p>
+                    Winner of the best game prize because how enjoyable is it to play, its mechanics and the team work made it possible to create a complete game.     
+                </p>
+                
+                <!--High Five!-->
+                <h2>High Five!</h2>
+                <hr class="hSeparator"/>
+
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/1.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/2.png" title="" alt=""/>
+                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/3.png" title="" alt=""/>
+                </div>
+
+                <p>
+                    Two players have to fight in order to be the last one standing over the platform. There are two characters full of personality available to use in order to make the other player fall off the platform. But there is more. The game includes several power ups and players will also have to pay attention to its environment, as it will be disappearing as the time goes by.
+                    Choose between two levels and and show you are the best.                        
+                </p>
+
+                <p>
+                    This game was developed during a GameJam, an event where several groups of people have to develop a videogame in 48 hours. High Five was awarded the prize for the best game and art direction, making it the winner of this game jam. The game was developed by a team made of six people, what improved my skill when working as a part of a development team.
+                </p>
             </div>
-        </section>
+        </div>
 
         <!--Page ending-->
         <footer id="footer"></footer>
         <script src="Scripts/footer.js"></script>
+        </div>
     </body>
 </html>
