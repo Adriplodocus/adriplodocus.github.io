@@ -12,19 +12,38 @@ Separation lines color: #826F66
     src: url(../Fonts/Louis.ttf);
 }
 
+/*Responsive*/
+/* Ajuste para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .contentDiv {
+        width: 90%;
+        padding-top: 2%;
+    }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .contentDiv {
+        width: 95%;
+        padding-top: 2%;
+    }
+}
+
 /*GENERALS*/
-html, body {
+html {
     height: auto;
     min-height: 100%;
-  }
+}
 
 video {
     width: 100%;
     height: auto;
     display: block;
-  }
+}
 
 body{
+    height: auto;
+    min-height: 100%;
     background-color: #3A3845;
     font-family: Louis;
 }
@@ -38,18 +57,18 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-size: xx-large;
+}
+
 h1, h2, h3{
     color: #C69B7B;
     font-style: italic;
 }
 
-h1{
-    font-size: xx-large;
-}
-
 p{
    color: #F7CCAC;
-   font-size: 17px;
+   font-size: 25px;
 }
 
 textarea{
@@ -98,14 +117,14 @@ footer{
 }
 
 .gameCapture{
-    max-width: 45%; /* o el tamaño que prefieras */
+    max-width: 45%;
     height: auto;
     border: 2px solid black;
 }
 
 .contentDiv{
-    height: 90%;
-    width: 55%;
+    height: 85%;
+    width: 75%;
     margin: auto;
     position: relative;
     overflow-y: auto;
@@ -119,31 +138,16 @@ footer{
     overflow: auto; /* o hidden */
   }
 
-/* Ajuste para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
-    .contentDiv {
-        width: 90%;
-        padding-top: 2%;
-    }
-}
-
-/* Ajuste para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-    .contentDiv {
-        width: 95%;
-        padding-top: 3%;
-    }
-}
-
 .sections{
     text-align: center;
     word-spacing: 5pc;
-    font-size: larger;
+    font-size: 200%;
     width: 100%;
 }
 
 .link{
     text-decoration: underline;
+    font-size: 25px;
 }
 
 .imgBlock {
@@ -169,8 +173,7 @@ footer{
 }
 
 /*IDS*/
-#gameDiv_1, #gameDiv_2, #gameDiv_3, #gameDiv_4, #gameDiv_5, #gameDiv_6, #gameDiv_7, #gameDiv_7, #gameDiv_8, #gameDiv_9, #gameDiv_10, #gameDiv_11, #gameDiv_12, #gameDiv_13, #gameDiv_14, #gameDiv_15{
-    visibility: hidden;
+#gameDiv{
     width: 1250x;
     left: 0;
     right: 0;
@@ -190,9 +193,10 @@ footer{
 }
 
 #img_myself{
+    padding-top: 25px;
     position: relative;
     float:left;
-    width: 25pc;
+    width: 50%;
 }
 .cv_wrapper {
     height: 100vh;
@@ -201,8 +205,8 @@ footer{
     align-items: center;
 }
 #img_cv {
-    max-width: 90%;
-    max-height: 80vh;
+    max-width: 100%;
+    max-height: 90vh;
     border: 4px solid black;
     object-fit: contain;
 }
