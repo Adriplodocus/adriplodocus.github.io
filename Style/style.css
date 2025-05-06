@@ -12,23 +12,6 @@ Separation lines color: #826F66
     src: url(../Fonts/Louis.ttf);
 }
 
-/*Responsive*/
-/* Ajuste para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
-    .contentDiv {
-        width: 90%;
-        padding-top: 2%;
-    }
-}
-
-/* Ajuste para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-    .contentDiv {
-        width: 95%;
-        padding-top: 2%;
-    }
-}
-
 /*GENERALS*/
 html {
     height: auto;
