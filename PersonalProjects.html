@@ -17,7 +17,7 @@
         <!--Top of page-->
         <header>
             <div class="sections">
-                <a title="Index" href="index.html">Index</a>
+                <a title="Index" href="index.html">Home</a>
                 |
                 <a title="CV" href="CV.html">Cv</a>
                 |
@@ -28,11 +28,13 @@
         </header>
 
         <div id="div_games">
-            <a class="link" id="gameLink_OCT" title="OCT" href="Overcrowded.html">Overcrowded: Tycoon</a>
+            <a class="link" id="gameLink_OCT" title="OCT" href="Overcrowded.html">OC: Tycoon</a>
             |
             <a class="link" id="gameLink_TH" title="TH" href="TinyHunters.html">Tiny Hunters</a>
             |
             <a class="link" id="gameLink_CTR" title="CTR" href="CutTheRope.html">Cut the Rope</a>
+            |
+            <a class="link" id="gameLink_eduzland" title="Eduzland" href="Eduzland.html">eduZland</a>
             |
             <a class="link" id="gameLink_Tools" title="Tools" href="Tools.html">Tools</a>
             |
@@ -74,8 +76,10 @@
             <h2>Bread of the Wild</h2>
             <hr class="hSeparator"/>
             <div class="imgBlock">
-                <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/1.png" title="" alt=""/>
-                <img class="gameCapture" src="Imgs/GamesCaptures/BreadOfTheWild/2.png" title="" alt=""/>
+                <video id="videoPlayer" autoplay muted loop>
+                    <source src="Imgs/GamesCaptures/BreadOfTheWild/Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <p>
@@ -105,8 +109,10 @@
             <h2>Don't Get Any Closer</h2>
             <hr class="hSeparator"/>
             <div class="imgBlock">
-                <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/1.jpg" title="" alt=""/>
-                <img class="gameCapture" src="Imgs/GamesCaptures/DontGetAnyCloser/2.jpg" title="" alt=""/>
+                <video id="videoPlayer" autoplay muted loop>
+                    <source src="Imgs/GamesCaptures/DontGetAnyCloser/Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <p>
@@ -187,8 +193,25 @@
             </p>
         </div>
 
+        <!--High Five!-->
+        <div class="contentDiv">
+            <h2>Pokemon Team Visualizer</h2>
+            <hr class="hSeparator"/>
+
+            <div class="imgBlock">
+                <img class="gameCapture" src="Imgs/GamesCaptures/PokemonTeamVisualizer/1.png" title="" alt=""/>
+                <img class="gameCapture" src="Imgs/GamesCaptures/PokemonTeamVisualizer/2.gif" title="" alt=""/>
+            </div>
+
+            <p>
+                This a tool I created to help me visualize my Pokémon team while streaming. It allowed me to properly set up the source to show it on OBS with custom names and gifs.
+            </p>
+            <p>
+                Doing so manually was tough and time-consuming since it was very easy to break the layout. This tool allowed me to set up the source in a matter of seconds.
+            </p>
+        </div>
+
         <!--Page ending-->
-        <footer id="footer"></footer>
-        <script src="Scripts/footer.js"></script>
+
     </body>
 </html>
