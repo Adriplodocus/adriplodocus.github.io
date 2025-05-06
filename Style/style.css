@@ -19,7 +19,7 @@ html {
 }
 
 video {
-    width: 100%;
+    width: 75%;
     height: auto;
     display: block;
 }
@@ -106,7 +106,6 @@ footer{
 }
 
 .contentDiv{
-    height: 85%;
     width: 75%;
     margin: auto;
     position: relative;
@@ -177,9 +176,8 @@ footer{
 
 #img_myself{
     padding-top: 25px;
-    position: relative;
-    float:left;
-    width: 50%;
+    width: 100%;
+    min-width: 15vh;
 }
 .cv_wrapper {
     height: 100vh;
