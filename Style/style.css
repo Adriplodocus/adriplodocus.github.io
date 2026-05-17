@@ -184,22 +184,26 @@ header {
 .lang-switcher button {
     background: none;
     border: none;
-    color: var(--secondary-text);
+    border-bottom: 2px solid transparent;
+    color: var(--text-color);
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
     padding: 0.2rem 0.3rem;
-    transition: color var(--ease);
+    transition: color var(--ease), border-color var(--ease);
     letter-spacing: 0.04em;
+    opacity: 0.5;
 }
 
 .lang-switcher button:hover {
-    color: var(--text-color);
+    opacity: 1;
 }
 
 .lang-switcher button.active {
     color: var(--primary-color);
     font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 1;
 }
 
 .lang-separator {
