@@ -308,9 +308,9 @@ function applyTranslations(lang) {
     document.documentElement.lang = lang;
 
     // Update active state of language buttons
-    const langButtons = document.querySelectorAll('.lang-switcher button');
+    const langButtons = document.querySelectorAll('.lang-switcher button[data-lang]');
     langButtons.forEach(button => {
-        if (button.getAttribute('onclick').includes(`'${lang}'`)) {
+        if (button.getAttribute('data-lang') === lang) {
             button.classList.add('active');
         } else {
             button.classList.remove('active');

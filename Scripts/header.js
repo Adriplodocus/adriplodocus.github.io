@@ -21,6 +21,15 @@ fetch('header.html')
             if (portfolioLink) portfolioLink.id = 'current';
         }
 
+        // Wire up language switcher buttons
+        container.querySelectorAll('.lang-switcher button[data-lang]').forEach(button => {
+            button.addEventListener('click', () => {
+                const lang = button.getAttribute('data-lang');
+                localStorage.setItem('language', lang);
+                if (window.applyTranslations) window.applyTranslations(lang);
+            });
+        });
+
         // Apply translations after header is loaded
         if (window.applyTranslations) {
             const savedLang = localStorage.getItem('language') || 'en';
