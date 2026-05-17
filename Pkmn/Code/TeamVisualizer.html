@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <script src="Team.js"></script>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <style>
+            .pkDiv{
+                width:225px;
+                height: 150px;
+                float: left;
+            }
+            #pokeballBackground1, #pokeballBackground2, #pokeballBackground3, #pokeballBackground4, #pokeballBackground5, #pokeballBackground6 {
+                position: absolute;
+                width: 225px;
+                height: 150px;
+                z-index: -1;
+            }
+            .shadowDiv{
+                width:225px;
+                height: 150px;
+                float: left;
+                padding-top: 80px;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+            p {
+                height: 25px;
+                color: white;
+                text-align: center;
+                font-family: Anton, 'Arial Narrow Bold', sans-serif;
+                font-size: 35px;
+                text-shadow:
+                    3px 3px 0 #000,
+                    -3px 3px 0 #000,
+                    -3px -3px 0 #000,
+                    3px -3px 0 #000;
+            }
+            .container{
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body onload="changeP()">
+        <div class="container">
+            <div class="pkDiv"> <p id="p1"></p><img id="pokeballBackground1"><img id="img1"> </div>
+            <div class="pkDiv"> <p id="p2"></p><img id="pokeballBackground2"><img id="img2"> </div>
+            <div class="pkDiv"> <p id="p3"></p><img id="pokeballBackground3"><img id="img3"> </div>
+            <div class="pkDiv"> <p id="p4"></p><img id="pokeballBackground4"><img id="img4"> </div>
+            <div class="pkDiv"> <p id="p5"></p><img id="pokeballBackground5"><img id="img5"> </div>
+            <div class="pkDiv"> <p id="p6"></p><img id="pokeballBackground6"><img id="img6"> </div>
+        </div>
+        <div class="container">
+            <div class="shadowDiv">
+                <img id="shadow1">
+            </div>       
+            <div class="shadowDiv">
+                <img id="shadow2">
+            </div>       
+            <div class="shadowDiv">
+                <img id="shadow3">
+            </div>        
+            <div class="shadowDiv">
+                <img id="shadow4">
+            </div>        
+            <div class="shadowDiv">
+                <img id="shadow5">
+            </div>        
+            <div class="shadowDiv">
+                <img id="shadow6">
+            </div>
+        </div>
+    </body>
+</html>
+    

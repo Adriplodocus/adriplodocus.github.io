@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title data-i18n="portfolio-title">Adrián DG. Personal projects</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!--META-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--CSS REFS-->
+        <link rel="stylesheet" type="text/css" href="Style/style.css">
+        <script src="Scripts/localization.js"></script>
+    </head>
+
+    <body>
+        <!--Top of page-->
+        <header id="header"></header>
+        <script src="Scripts/header.js"></script>
+
+        <nav id="div_games"></nav>
+        <script src="Scripts/subnav.js"></script>
+
+        <!--Page content-->
+        <main>
+            <!--Astra-->
+            <section class="contentDiv">
+                <h2>Astra</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <video id="videoPlayerAstra" autoplay muted loop>
+                        <source src="Imgs/GamesCaptures/Astra/1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p data-i18n="astra-desc1"></p>
+                <p data-i18n="astra-desc2"></p>
+                <p data-i18n="astra-desc3"></p>
+                <p data-i18n="astra-desc4"></p>
+            </section>
+
+            <!--Bread of the Wild-->
+            <section class="contentDiv">
+                <h2>Bread of the Wild</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <video id="videoPlayerBread" autoplay muted loop>
+                        <source src="Imgs/GamesCaptures/BreadOfTheWild/Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p data-i18n="botw-desc1"></p>
+                <p data-i18n="botw-desc2"></p>
+                <p data-i18n="botw-desc3"></p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://klypp.itch.io/bread-of-the-wild" title="Bread of the wild itch.io link" data-i18n-title="botw-itch-title" target="_blank" style="text-decoration: underline;" data-i18n="try-it-out"></a>
+                </p>
+            </section>
+
+            <!--Don't Get Any Closer-->
+            <section class="contentDiv">
+                <h2>Don't Get Any Closer</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <video id="videoPlayerCloser" autoplay muted loop>
+                        <source src="Imgs/GamesCaptures/DontGetAnyCloser/Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p data-i18n="dgac-desc1"> </p>
+                <p data-i18n="dgac-desc2"></p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://krakengamesstudio.itch.io/dont-get-any-closer" title="Don't Get Any Closer Itch.io link" data-i18n-title="dgac-itch-title" target="_blank" style="text-decoration: underline;" data-i18n="try-it-out-pc"></a>
+                </p>
+            </section>
+
+            <!--Geometric Wars-->
+            <section class="contentDiv">
+                <h2>Geometric Wars</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/1.png" alt="Geometric Wars 1">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GeometricWars/2.png" alt="Geometric Wars 2">
+                </div>
+
+                <p data-i18n="gw-desc1"></p>
+                <p data-i18n="gw-desc2"></p>
+                <p data-i18n="gw-desc3"></p>
+            </section>
+
+            <!--Guys That Run-->
+            <section class="contentDiv">
+                <h2>Guys That Run</h2>
+                <hr class="hSeparator"/>
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/1.png" alt="Guys That Run 1">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/GuysThatRun/2.png" alt="Guys That Run 2">
+                </div>
+
+                <p data-i18n="gtr-desc1"></p>
+                <p data-i18n="gtr-desc2"></p>
+            </section>
+
+            <!--High Five!-->
+            <section class="contentDiv">
+                <h2>High Five!</h2>
+                <hr class="hSeparator"/>
+
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/1.png" alt="High Five 1">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/HighFive/2.png" alt="High Five 2">
+                </div>
+
+                <p data-i18n="hf-desc1"></p>
+                <p data-i18n="hf-desc2"></p>
+            </section>
+
+            <!--Pokemon Visualizer-->
+            <section class="contentDiv">
+                <h2>Pokemon Team Visualizer</h2>
+                <hr class="hSeparator"/>
+
+                <div class="imgBlock">
+                    <img class="gameCapture" src="Imgs/GamesCaptures/PokemonTeamVisualizer/1.png" alt="Pokemon Team Visualizer">
+                </div>
+                <div style="overflow-x: auto; width: 100%; border-radius: 8px; border: 1px solid var(--separator-color);">
+                    <iframe src="Pkmn/Code/TeamVisualizer.html" scrolling="no" style="width: 1400px; height: 325px; border: none; display: block; margin: 0 auto;"></iframe>
+                </div>
+                <p style="margin-top: 1.5rem;" data-i18n="pkmn-desc1"></p>
+                <p data-i18n="pkmn-desc2"></p>
+            </section>
+        </main>
+
+        <!--Page ending-->
+        <footer id="footer"></footer>
+        <script src="Scripts/footer.js"></script>
+    </body>
+</html>

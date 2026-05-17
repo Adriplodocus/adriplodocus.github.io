@@ -1,0 +1,52 @@
+{
+    "pokemon": {
+        "pokemon1": [
+            {
+                "name": "PIKACHU",
+                "mote": "PIKAPI",
+                "shiny": false,
+                "mega": false
+            }
+        ],
+        "pokemon2": [
+            {
+                "name": "UMBREON",
+                "mote": "FIONA",
+                "shiny": true,
+                "mega": false
+            }
+        ],
+        "pokemon3": [
+            {
+                "name": "GYARADOS",
+                "mote": "WOHOO",
+                "shiny": true,
+                "mega": true
+            }
+        ],
+        "pokemon4": [
+            {
+                "name": "LUGIA",
+                "mote": "MINDFLAYER",
+                "shiny": false,
+                "mega": false
+            }
+        ],
+        "pokemon5": [
+            {
+                "name": "LATIOS",
+                "mote": "LATIOS",
+                "shiny": false,
+                "mega": true
+            }
+        ],
+        "pokemon6": [
+            {
+                "name": "ARTICUNO",
+                "mote": "ARTICUNO",
+                "shiny": false,
+                "mega": false
+            }
+        ]
+    }
+}
