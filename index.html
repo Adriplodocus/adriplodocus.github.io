@@ -5,11 +5,11 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!--META-->
         <meta charset="utf-8">
-        <meta name="language" content="english"> 
+        <meta name="language" content="english">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Adrián Durán">
-        <meta name="description" content="Adrián Durán Professional page.">
-        <meta name="keywords" content="Game developer, Unity, html, apps">
+        <meta name="description" content="Adrián Durán — Unity game developer. Shipped titles for mobile and PC.">
+        <meta name="keywords" content="Game developer, Unity, C#, mobile, PC, Zenject, VContainer">
         <meta name="robots" content="index,follow">
 
         <!--CSS REFS-->
@@ -24,31 +24,64 @@
 
         <!--Page content-->
         <main>
-            <section class="contentDiv">
-                <h1 data-i18n="hi-i-am"></h1>
-                <hr class="hSeparator"/>
-                <div class="intro-flex">
-                    <img id="img_myself" src="Imgs/Me.png" alt="Adrián Durán García">
-                    <div class="intro-text">
-                        <p data-i18n="intro-p1"></p>
-                        <p data-i18n="intro-p2"></p>
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-label" data-i18n="hero-label">Unity Game Developer</p>
+                        <h1 data-i18n="hi-i-am">Hi, I'm Adrián Durán</h1>
+                        <p class="hero-desc" data-i18n="hero-subtitle">Building scalable game systems for mobile and PC — from prototype to shipped product.</p>
+                        <div class="hero-ctas">
+                            <a href="PersonalProjects.html" class="btn btn-primary" data-i18n="nav-portfolio">Portfolio</a>
+                            <a href="CV.html" class="btn btn-secondary" data-i18n="nav-cv">CV</a>
+                        </div>
+                    </div>
+                    <div class="hero-photo-wrap">
+                        <img id="img_myself" src="Imgs/Me.png" alt="Adrián Durán García">
                     </div>
                 </div>
             </section>
 
+            <!-- Skills -->
+            <div class="skills-wrap">
+                <p class="skills-label">Stack</p>
+                <div class="skills-grid">
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Zenject</span>
+                    <span class="skill-tag">VContainer</span>
+                    <span class="skill-tag">Addressables</span>
+                    <span class="skill-tag">Object Pooling</span>
+                    <span class="skill-tag">Unity Analytics</span>
+                    <span class="skill-tag">ScriptableObjects</span>
+                    <span class="skill-tag">Android</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+
+            <!-- About -->
+            <section class="contentDiv">
+                <p data-i18n="intro-p1"></p>
+                <p data-i18n="intro-p2"></p>
+            </section>
+
+            <!-- Experience -->
             <section class="contentDiv">
                 <p data-i18n="exp-p1"></p>
                 <p data-i18n="exp-p2"></p>
                 <p data-i18n="exp-p3"></p>
-                <p data-i18n="exp-p4"></p>
             </section>
 
+            <!-- Contact CTA -->
             <section class="contentDiv">
                 <h2 data-i18n="want-to-know-more"></h2>
                 <p data-i18n="reach-out"></p>
             </section>
+
         </main>
-        
+
         <!--Page ending-->
         <footer id="footer"></footer>
         <script src="Scripts/footer.js"></script>
