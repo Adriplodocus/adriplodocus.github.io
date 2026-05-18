@@ -70,6 +70,7 @@ const translations = {
         'cv-img-alt': 'Curriculum Vitae',
         'cv-img-src': 'Imgs/CV_Eng.png',
         'cv-webp-src': 'Imgs/CV_Eng.webp',
+        'cv-pdf-src': 'Imgs/CV_ENG.pdf',
         
         //Astra.
         'astra-desc1': 'In this project we tackle the challenge of building a highly ambitious game from scratch.',
@@ -206,6 +207,7 @@ const translations = {
         'cv-img-alt': 'Currículum Vitae',
         'cv-img-src': 'Imgs/CV_ES.png',
         'cv-webp-src': 'Imgs/CV_ES.webp',
+        'cv-pdf-src': 'Imgs/CV_ES.pdf',
         
         //Astra.
         'astra-desc1': 'En este proyecto abordamos el desafío de construir un juego altamente ambicioso desde cero.',
@@ -289,6 +291,12 @@ function applyTranslations(lang) {
             } else {
                 element.textContent = translations[lang][key];
             }
+        }
+
+        // Handle href attribute translation
+        const hrefKey = element.getAttribute('data-i18n-href');
+        if (hrefKey && translations[lang] && translations[lang][hrefKey]) {
+            element.setAttribute('href', translations[lang][hrefKey]);
         }
 
         // Handle src attribute translation
