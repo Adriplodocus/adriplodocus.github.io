@@ -323,6 +323,13 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTranslations(savedLang);
 });
 
+document.addEventListener('click', (e) => {
+    const button = e.target.closest('button[data-lang]');
+    if (button) {
+        setLanguage(button.getAttribute('data-lang'));
+    }
+});
+
 // Expose setLanguage to window
 window.setLanguage = setLanguage;
 window.applyTranslations = applyTranslations;
