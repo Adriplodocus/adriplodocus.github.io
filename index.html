@@ -36,6 +36,8 @@
         <meta property="og:image"       content="https://adriplodocus.github.io/Imgs/Me.png">
         <meta name="twitter:card"       content="summary_large_image">
 
+        <meta name="theme-color" content="#0d0d11">
+        <link rel="preload" href="Fonts/Louis.ttf" as="font" type="font/ttf" crossorigin>
         <!--CSS REFS-->
         <link rel="stylesheet" type="text/css" href="Style/style.css">
         <script src="Scripts/localization.js"></script>
@@ -80,7 +82,10 @@
                         </div>
                     </div>
                     <div class="hero-photo-wrap">
-                        <img id="img_myself" src="Imgs/Me.png" alt="Adrián Durán García">
+                        <picture>
+                            <source srcset="Imgs/Me.webp" type="image/webp">
+                            <img id="img_myself" src="Imgs/Me.png" alt="Adrián Durán García">
+                        </picture>
                     </div>
                 </div>
             </section>

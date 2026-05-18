@@ -66,9 +66,10 @@ const translations = {
         'want-to-know-more': 'Want to know more?',
         'reach-out': 'I’m always open to conversations about my work, background, or collaborations. Feel free to reach out!',
         
-        //CV.  
+        //CV.
         'cv-img-alt': 'Curriculum Vitae',
         'cv-img-src': 'Imgs/CV_Eng.png',
+        'cv-webp-src': 'Imgs/CV_Eng.webp',
         
         //Astra.
         'astra-desc1': 'In this project we tackle the challenge of building a highly ambitious game from scratch.',
@@ -201,9 +202,10 @@ const translations = {
         'want-to-know-more': '¿Quieres saber más?',
         'reach-out': 'Siempre estoy abierto a hablar sobre mi trabajo, trayectoria o colaboraciones. ¡No dudes en contactarme!',
         
-        //CV.  
+        //CV.
         'cv-img-alt': 'Currículum Vitae',
         'cv-img-src': 'Imgs/CV_ES.png',
+        'cv-webp-src': 'Imgs/CV_ES.webp',
         
         //Astra.
         'astra-desc1': 'En este proyecto abordamos el desafío de construir un juego altamente ambicioso desde cero.',
@@ -290,6 +292,11 @@ function applyTranslations(lang) {
         }
 
         // Handle src attribute translation
+        const srcsetKey = element.getAttribute('data-i18n-srcset');
+        if (srcsetKey && translations[lang] && translations[lang][srcsetKey]) {
+            element.setAttribute('srcset', translations[lang][srcsetKey]);
+        }
+
         const srcKey = element.getAttribute('data-i18n-src');
         if (translations[lang] && srcKey && translations[lang][srcKey]) {
             element.setAttribute('src', translations[lang][srcKey]);
