@@ -282,7 +282,7 @@ function setLanguage(lang) {
 }
 
 function applyTranslations(lang) {
-    const elements = document.querySelectorAll('[data-i18n], [data-i18n-title], [data-i18n-src]');
+    const elements = document.querySelectorAll('[data-i18n], [data-i18n-title], [data-i18n-src], [data-i18n-srcset], [data-i18n-href]');
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (key && translations[lang] && translations[lang][key]) {
