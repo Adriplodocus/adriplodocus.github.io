@@ -60,9 +60,6 @@
         'exp-p2': 'I work with a strong sense of responsibility for what I build, paying attention to detail and maintaining clear communication with professionals from different disciplines. I adapt quickly, prioritize tasks efficiently, and collaborate closely with the team to solve complex problems and deliver solid solutions.',
         'exp-p3': 'My goal is to create unique and profitable experiences through player data analysis and the implementation of innovative game systems.',
         
-        //Hero stats.
-        'hero-stats-titles-label': 'published titles',
-
         //Kindness.
         'want-to-know-more': 'Want to know more?',
         'reach-out': 'I\'m always open to conversations about my work, background, or collaborations. Feel free to reach out!',
@@ -200,9 +197,6 @@
         'exp-p1': 'Tengo experiencia desarrollando juegos para móvil y PC, desde la fase de prototitpo hasta producción. Me centro en crear arquitecturas limpias y escalables utilizando herramientas como Zenject y VContainer, y en optimizar el rendimiento con técnicas como object pooling y Addressables.',        'exp-p2': 'Trabajo con un fuerte sentido de responsabilidad sobre lo que construyo, prestando atención al detalle y manteniendo una comunicación clara con perfiles de distintas disciplinas. Me adapto con rapidez, priorizo tareas de forma eficiente y colaboro estrechamente con el equipo para resolver problemas complejos y entregar soluciones sólidas.',
         'exp-p3': 'Mi objetivo es crear experiencias únicas y rentables mediante el análisis de datos de los jugadores y la implementación de sistemas de juego innovadores.',
         
-        //Hero stats.
-        'hero-stats-titles-label': 'títulos publicados',
-
         //Kindness.
         'want-to-know-more': '¿Quieres saber más?',
         'reach-out': 'Siempre estoy abierto a hablar sobre mi trabajo, trayectoria o colaboraciones. ¡No dudes en contactarme!',
