@@ -7,7 +7,15 @@
       "Bash(git reset *)",
       "Bash(git checkout *)",
       "Bash(git commit *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(node --input-type=module)",
+      "Bash(echo \"EXIT: $?\")",
+      "PowerShell(node -e \"try { require\\('./Scripts/localization.js'\\); console.log\\('OK'\\) } catch\\(e\\) { console.log\\('ERROR: ' + e.message\\) }\" 2>&1)",
+      "WebFetch(domain:adriplodocus.github.io)",
+      "Bash(node -e \"require\\('./Scripts/localization.js'\\)\")",
+      "PowerShell(node -e \"require\\('./Scripts/localization.js'\\)\" 2>&1)",
+      "Bash(python *)",
+      "Bash(Remove-Item *)"
     ]
   }
 }
