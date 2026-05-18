@@ -343,6 +343,10 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTranslations(savedLang);
 });
 
+document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+});
+
 document.addEventListener('click', (e) => {
     const button = e.target.closest('button[data-lang]');
     if (button) {
