@@ -55,8 +55,6 @@ const translations = {
         
         //Intro.
         'intro-p1': 'Video games have been my greatest passion since childhood. Not only as entertainment, but also as a source of learning. This passion pushed me to explore how they are made and eventually become a game developer.',
-        'intro-p2': 'I started with the first Play Station. After that, games such as the Dark Souls saga (including Sekiro), Lineage II, Final Fantasy X and Resident Evil: Requiem left a mark on me.',
-        
         //Experience.
         'exp-p1': 'I have experience developing games for mobile and PC, from the prototype phase to production. I focus on building clean and scalable architectures using tools such as Zenject and VContainer, and on optimizing performance with techniques like object pooling and Addressables.',
         'exp-p2': 'I work with a strong sense of responsibility for what I build, paying attention to detail and maintaining clear communication with professionals from different disciplines. I adapt quickly, prioritize tasks efficiently, and collaborate closely with the team to solve complex problems and deliver solid solutions.',
@@ -193,8 +191,6 @@ const translations = {
         
         //Intro.
         'intro-p1': 'Los videojuegos han sido mi mayor pasión desde la infancia. No solo como entretenimiento, sino también como fuente de aprendizaje. Esta pasión me impulsó a explorar cómo se hacen y, finalmente, a convertirme en desarrollador de videojuegos.',
-        'intro-p2': 'Comencé con la Play Station 1. Después de eso, juegos como la saga Dark Souls (incluyendo Sekiro), Lineage II, Final Fantasy X y Resident Evil: Requiem dejaron huella en mi.',
-        
         //Experience.
         'exp-p1': 'Tengo experiencia desarrollando juegos para móvil y PC, desde la fase de prototitpo hasta producción. Me centro en crear arquitecturas limpias y escalables utilizando herramientas como Zenject y VContainer, y en optimizar el rendimiento con técnicas como object pooling y Addressables.',        'exp-p2': 'Trabajo con un fuerte sentido de responsabilidad sobre lo que construyo, prestando atención al detalle y manteniendo una comunicación clara con perfiles de distintas disciplinas. Me adapto con rapidez, priorizo tareas de forma eficiente y colaboro estrechamente con el equipo para resolver problemas complejos y entregar soluciones sólidas.',
         'exp-p3': 'Mi objetivo es crear experiencias únicas y rentables mediante el análisis de datos de los jugadores y la implementación de sistemas de juego innovadores.',
