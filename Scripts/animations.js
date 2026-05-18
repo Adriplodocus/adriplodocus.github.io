@@ -22,8 +22,12 @@
 
     document.querySelectorAll('[data-reveal]').forEach(function (el) {
         var rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) return;
-        el.classList.add('reveal');
-        observer.observe(el);
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            // Already visible on load: CSS animation directly, no IO needed
+            el.style.animation = 'fadeSlideUp 0.5s ease 0.05s both';
+        } else {
+            el.classList.add('reveal');
+            observer.observe(el);
+        }
     });
 })();
