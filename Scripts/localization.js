@@ -66,8 +66,7 @@ const translations = {
         
         //CV.
         'cv-img-alt': 'Curriculum Vitae',
-        'cv-img-src': 'Imgs/CV_Eng.png',
-        'cv-webp-src': 'Imgs/CV_Eng.webp',
+        'cv-img-src': 'Imgs/CV_Eng.webp',
         'cv-pdf-src': 'Imgs/CV_ENG.pdf',
         
         //Astra.
@@ -201,8 +200,7 @@ const translations = {
         
         //CV.
         'cv-img-alt': 'Currículum Vitae',
-        'cv-img-src': 'Imgs/CV_ES.png',
-        'cv-webp-src': 'Imgs/CV_ES.webp',
+        'cv-img-src': 'Imgs/CV_ES.webp',
         'cv-pdf-src': 'Imgs/CV_ES.pdf',
         
         //Astra.
