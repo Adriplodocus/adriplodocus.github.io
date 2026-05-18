@@ -46,9 +46,9 @@ const translations = {
         'botw-itch-title': 'Bread of the Wild itch.io link',
 
         //Hello.
-        ‘hero-label’: ‘Unity Game Developer’,
-        ‘hero-subtitle’: ‘Building scalable game systems for mobile and PC — from prototype to shipped product.’,
-        ‘hi-i-am’: ‘Hi, I’m Adrián Durán’,
+        'hero-label': 'Unity Game Developer',
+        'hero-subtitle': 'Building scalable game systems for mobile and PC — from prototype to shipped product.',
+        'hi-i-am': 'Hi, I'm Adrián Durán',
         
         //Intro.
         'intro-p1': 'Video games have been my greatest passion since childhood. Not only as entertainment, but also as a source of learning. This passion pushed me to explore how they are made and eventually become a game developer.',
