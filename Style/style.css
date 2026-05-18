@@ -551,6 +551,40 @@ footer a:hover, .footer a:hover {
     animation: pulse-dot 2.5s ease-in-out 0.6s infinite;
 }
 
+.hero-stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem 1.25rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1;
+}
+
+.hero-stat-label {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+}
+
+.hero-stat-sep {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 0.05rem;
+}
+
 .hero-contacts {
     display: flex;
     flex-wrap: wrap;
@@ -592,9 +626,10 @@ footer a:hover, .footer a:hover {
     border-radius: 3px;
 }
 
-.badge-personal { background: rgba(200, 149, 106, 0.12); color: var(--primary-color); }
-.badge-gamejam  { background: rgba(139,  92, 246, 0.12); color: #a78bfa; }
-.badge-tool     { background: rgba( 56, 189, 248, 0.12); color: #7dd3fc; }
+.badge-personal      { background: rgba(200, 149, 106, 0.12); color: var(--primary-color); }
+.badge-gamejam       { background: rgba(139,  92, 246, 0.12); color: #a78bfa; }
+.badge-tool          { background: rgba( 56, 189, 248, 0.12); color: #7dd3fc; }
+.badge-company-test  { background: rgba( 52, 211, 153, 0.12); color: #6ee7b7; }
 
 .project-stack {
     display: flex;
@@ -673,7 +708,8 @@ footer a:hover, .footer a:hover {
 .hero-label      { animation: fadeSlideUp 0.5s ease 0.05s both; }
 .hero h1         { animation: fadeSlideUp 0.6s ease 0.18s both; }
 .hero-desc       { animation: fadeSlideUp 0.5s ease 0.30s both; }
-.hero-ctas       { animation: fadeSlideUp 0.5s ease 0.42s both; }
+.hero-stats      { animation: fadeSlideUp 0.5s ease 0.38s both; }
+.hero-ctas       { animation: fadeSlideUp 0.5s ease 0.48s both; }
 .hero-photo-wrap { animation: fadeSlideUp 0.65s ease 0.10s both; }
 
 /* Skills section follows hero */
@@ -700,6 +736,7 @@ footer a:hover, .footer a:hover {
     .hero-label,
     .hero h1,
     .hero-desc,
+    .hero-stats,
     .hero-ctas,
     .hero-photo-wrap,
     .skills-wrap,
@@ -732,6 +769,10 @@ footer a:hover, .footer a:hover {
     }
 
     .hero-ctas {
+        justify-content: center;
+    }
+
+    .hero-stats {
         justify-content: center;
     }
 

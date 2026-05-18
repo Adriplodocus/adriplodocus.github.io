@@ -54,15 +54,18 @@ const translations = {
         'hi-i-am': 'Hi, I\'m Adrián Durán',
         
         //Intro.
-        'intro-p1': 'Video games have been my greatest passion since childhood. Not only as entertainment, but also as a source of learning. This passion pushed me to explore how they are made and eventually become a game developer.',
+        'intro-p1': 'I started building games to understand how they worked. Since then I\'ve shipped titles across multiple studios for mobile and PC, always focused on the same things: clean architecture, tight systems, and code that holds up.',
         //Experience.
         'exp-p1': 'I have experience developing games for mobile and PC, from the prototype phase to production. I focus on building clean and scalable architectures using tools such as Zenject and VContainer, and on optimizing performance with techniques like object pooling and Addressables.',
         'exp-p2': 'I work with a strong sense of responsibility for what I build, paying attention to detail and maintaining clear communication with professionals from different disciplines. I adapt quickly, prioritize tasks efficiently, and collaborate closely with the team to solve complex problems and deliver solid solutions.',
         'exp-p3': 'My goal is to create unique and profitable experiences through player data analysis and the implementation of innovative game systems.',
         
+        //Hero stats.
+        ‘hero-stats-titles-label’: ‘published titles’,
+
         //Kindness.
-        'want-to-know-more': 'Want to know more?',
-        'reach-out': 'I’m always open to conversations about my work, background, or collaborations. Feel free to reach out!',
+        ‘want-to-know-more’: ‘Want to know more?’,
+        ‘reach-out’: ‘I’m always open to conversations about my work, background, or collaborations. Feel free to reach out!’,
         
         //CV.
         'cv-img-alt': 'Curriculum Vitae',
@@ -105,6 +108,9 @@ const translations = {
         //Case studies.
         'case-studies-desc1': 'Projects developed as tests for companies. They focus on maintaining a simple architecture, scalability, and production-ready standards.',
         'case-studies-desc2': 'Each one follows a modular structure using VContainer for dependency injection, Addressables, and object pooling. Some of them also integrate audio and vibration systems.',
+        'cs-solitaire-desc1': 'Classic Solitaire built as a company test. The project focuses on clean separation of concerns and production-ready standards, using VContainer for dependency injection, Addressables for asset management, and object pooling for card instances.',
+        'cs-greplicas-desc1': 'Gameplay replicas developed as a technical test, reproducing the mechanics and feel of existing titles. Built on VContainer, Addressables, and object pooling, with audio feedback integrated throughout.',
+        'cs-match3-desc1': 'Match-3 puzzle game built as a company test, implementing cascade logic and a scalable tile system. Structured with VContainer and Addressables, and includes both an audio system and haptic vibration feedback.',
 
         //Tools.
         'tools-h1': 'Tools',
@@ -189,11 +195,14 @@ const translations = {
         'hi-i-am': 'Hola, soy Adrián Durán',
         
         //Intro.
-        'intro-p1': 'Los videojuegos han sido mi mayor pasión desde la infancia. No solo como entretenimiento, sino también como fuente de aprendizaje. Esta pasión me impulsó a explorar cómo se hacen y, finalmente, a convertirme en desarrollador de videojuegos.',
+        'intro-p1': 'Empecé a hacer juegos para entender cómo funcionaban. Desde entonces he lanzado títulos en varios estudios para móvil y PC, siempre con el mismo foco: arquitecturas limpias, sistemas robustos y código que aguante el paso del tiempo.',
         //Experience.
         'exp-p1': 'Tengo experiencia desarrollando juegos para móvil y PC, desde la fase de prototitpo hasta producción. Me centro en crear arquitecturas limpias y escalables utilizando herramientas como Zenject y VContainer, y en optimizar el rendimiento con técnicas como object pooling y Addressables.',        'exp-p2': 'Trabajo con un fuerte sentido de responsabilidad sobre lo que construyo, prestando atención al detalle y manteniendo una comunicación clara con perfiles de distintas disciplinas. Me adapto con rapidez, priorizo tareas de forma eficiente y colaboro estrechamente con el equipo para resolver problemas complejos y entregar soluciones sólidas.',
         'exp-p3': 'Mi objetivo es crear experiencias únicas y rentables mediante el análisis de datos de los jugadores y la implementación de sistemas de juego innovadores.',
         
+        //Hero stats.
+        'hero-stats-titles-label': 'títulos publicados',
+
         //Kindness.
         'want-to-know-more': '¿Quieres saber más?',
         'reach-out': 'Siempre estoy abierto a hablar sobre mi trabajo, trayectoria o colaboraciones. ¡No dudes en contactarme!',
@@ -239,6 +248,9 @@ const translations = {
         //Case studies.
         'case-studies-desc1': 'Proyectos desarrollados como pruebas para empresas. Se centran en mantener una arquitectura simple, escalabilidad y estándares listos para producción.',
         'case-studies-desc2': 'Cada uno sigue una estructura modular utilizando VContainer para la inyección de dependencias, addressables y object pooling. En algunos de ellos también se han integrado sistemas de audio y vibración.',
+        'cs-solitaire-desc1': 'Solitaire clásico desarrollado como prueba para una empresa. El proyecto se centra en una separación de responsabilidades clara y estándares de producción, usando VContainer para inyección de dependencias, Addressables para gestión de assets y object pooling para las instancias de cartas.',
+        'cs-greplicas-desc1': 'Réplicas de mecánicas de juego desarrolladas como prueba técnica, reproduciendo las mecánicas y sensaciones de títulos existentes. Construido con VContainer, Addressables y object pooling, con audio integrado en todo el proyecto.',
+        'cs-match3-desc1': 'Juego de puzzle Match-3 desarrollado como prueba para una empresa, implementando lógica en cascada y un sistema de fichas escalable. Estructurado con VContainer y Addressables, e incluye sistema de audio y feedback de vibración háptica.',
 
         //Tools.
         'tools-h1': 'Herramientas',
