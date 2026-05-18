@@ -27,6 +27,7 @@ const translations = {
         //Generics
         'available-for-work': 'Available for work',
         'download-cv': 'Download CV',
+        'contact-email-btn': 'Email me',
         'check-on-github': 'View on Github',
         'oct-contribution': 'My contribution',
         'th-contribution': 'My contribution',
@@ -162,6 +163,7 @@ const translations = {
         //Generics
         'available-for-work': 'Disponible para trabajar',
         'download-cv': 'Descargar CV',
+        'contact-email-btn': 'Envíame un email',
         'check-on-github': 'Ver en Github',
         'oct-contribution': 'Mi contribución',
         'th-contribution': 'Mi contribución',
