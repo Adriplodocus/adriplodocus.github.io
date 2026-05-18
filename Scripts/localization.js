@@ -47,7 +47,7 @@ const translations = {
 
         //Hello.
         'hero-label': 'Unity Game Developer',
-        'hero-subtitle': 'Building scalable game systems for mobile and PC — from prototype to shipped product.',
+        'hero-subtitle': 'I build scalable game systems for mobile and PC, from prototype to final product.',
         'hi-i-am': 'Hi, I\'m Adrián Durán',
         
         //Intro.
@@ -55,9 +55,9 @@ const translations = {
         'intro-p2': 'I started with the first Play Station. After that, games such as the Dark Souls saga (including Sekiro), Lineage II, Final Fantasy X and Resident Evil: Requiem left a mark on me.',
         
         //Experience.
-        'exp-p1': 'I have experience developing games for mobile and PC, from prototypes to production. I focus on building clean and scalable architectures using tools such as Zenject and VContainer, and on optimizing performance with techniques like object pooling and Addressables.',
+        'exp-p1': 'I have experience developing games for mobile and PC, from the prototype phase to production. I focus on building clean and scalable architectures using tools such as Zenject and VContainer, and on optimizing performance with techniques like object pooling and Addressables.',
         'exp-p2': 'I work with a strong sense of responsibility for what I build, paying attention to detail and maintaining clear communication with professionals from different disciplines. I adapt quickly, prioritize tasks efficiently, and collaborate closely with the team to solve complex problems and deliver solid solutions.',
-        'exp-p3': 'My goal is to grow within a creative team, contribute strong technical foundations, and help create unique experiences that push boundaries.',
+        'exp-p3': 'My goal is to create unique and profitable experiences through player data analysis and the implementation of innovative game systems.',
         
         //Kindness.
         'want-to-know-more': 'Want to know more?',
@@ -68,7 +68,7 @@ const translations = {
         'cv-img-src': 'Imgs/CV_Eng.png',
         
         //Astra.
-        'astra-desc1': 'This project is an attempt to tackle the challenge of building a highly ambitious game from scratch.',
+        'astra-desc1': 'In this project we tackle the challenge of building a highly ambitious game from scratch.',
         'astra-desc2': 'It uses Zenject as our dependency injection framework. Unity Analytics has also been integrated to evaluate player behavior, helping guide future development decisions based on real gameplay data.',
         'astra-desc3': 'The damage system was carefully designed to allow detailed control over the properties of each attack, such as damage value or whether it can be countered and more. This makes combat highly customizable.',
         'astra-desc4': 'For persistence, we implemented a save system based on encrypted JSON files, making it easier for developers to add and manage saved data securely and consistently.',
@@ -180,7 +180,7 @@ const translations = {
 
         //Hello.
         'hero-label': 'Desarrollador Unity',
-        'hero-subtitle': 'Construyendo sistemas de juego escalables para móvil y PC — del prototipo al producto lanzado.',
+        'hero-subtitle': 'Creo sistemas de juego escalables para móvil y PC, desde el prototipo hasta el producto final.',
         'hi-i-am': 'Hola, soy Adrián Durán',
         
         //Intro.
@@ -188,21 +188,20 @@ const translations = {
         'intro-p2': 'Comencé con la Play Station 1. Después de eso, juegos como la saga Dark Souls (incluyendo Sekiro), Lineage II, Final Fantasy X y Resident Evil: Requiem dejaron huella en mi.',
         
         //Experience.
-        'exp-p1': 'Tengo experiencia desarrollando juegos para móvil y PC, desde prototipos hasta producción. Me centro en crear arquitecturas limpias y escalables utilizando herramientas como Zenject y VContainer, y en optimizar el rendimiento con técnicas como object pooling y Addressables.',
-        'exp-p2': 'Trabajo con un fuerte sentido de responsabilidad sobre lo que construyo, prestando atención al detalle y manteniendo una comunicación clara con perfiles de distintas disciplinas. Me adapto con rapidez, priorizo tareas de forma eficiente y colaboro estrechamente con el equipo para resolver problemas complejos y entregar soluciones sólidas.',
-        'exp-p3': 'Mi objetivo es crecer dentro de un equipo creativo, aportar bases técnicas robustas y contribuir a crear experiencias únicas que superen los límites.',
+        'exp-p1': 'Tengo experiencia desarrollando juegos para móvil y PC, desde la fase de prototitpo hasta producción. Me centro en crear arquitecturas limpias y escalables utilizando herramientas como Zenject y VContainer, y en optimizar el rendimiento con técnicas como object pooling y Addressables.',        'exp-p2': 'Trabajo con un fuerte sentido de responsabilidad sobre lo que construyo, prestando atención al detalle y manteniendo una comunicación clara con perfiles de distintas disciplinas. Me adapto con rapidez, priorizo tareas de forma eficiente y colaboro estrechamente con el equipo para resolver problemas complejos y entregar soluciones sólidas.',
+        'exp-p3': 'Mi objetivo es crear experiencias únicas y rentables mediante el análisis de datos de los jugadores y la implementación de sistemas de juego innovadores.',
         
         //Kindness.
         'want-to-know-more': '¿Quieres saber más?',
-        'reach-out': 'Siempre estoy abierto a conversaciones sobre mi trabajo, trayectoria o colaboraciones. ¡No dudes en contactarme!',
+        'reach-out': 'Siempre estoy abierto a hablar sobre mi trabajo, trayectoria o colaboraciones. ¡No dudes en contactarme!',
         
         //CV.  
         'cv-img-alt': 'Currículum Vitae',
         'cv-img-src': 'Imgs/CV_ES.png',
         
         //Astra.
-        'astra-desc1': 'Este proyecto es un intento de abordar el desafío de construir un juego altamente ambicioso desde cero.',
-        'astra-desc2': 'Usa Zenject como framework de inyección de dependencias. También se ha integrado Unity Analytics para evaluar el comportamiento del jugador, ayudando a guiar futuras decisiones de desarrollo basadas en datos reales de juego.',
+        'astra-desc1': 'En este proyecto abordamos el desafío de construir un juego altamente ambicioso desde cero.',
+        'astra-desc2': 'Usa Zenject como framework de inyección de dependencias. También se ha integrado Unity Analytics para evaluar el comportamiento del jugador y así guiar futuras decisiones de desarrollo basadas en datos reales de juego.',
         'astra-desc3': 'El sistema de daño fue cuidadosamente diseñado para permitir un control detallado sobre las propiedades de cada ataque, como el valor del daño o si se puede contraatacar y más. Esto hace que el combate sea muy personalizable.',
         'astra-desc4': 'Para la persistencia, hemos implementado un sistema de guardado basado en archivos JSON encriptados, lo que facilita a los desarrolladores agregar y gestionar datos guardados de forma segura y consistente.',
         
