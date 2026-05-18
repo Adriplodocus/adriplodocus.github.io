@@ -10,6 +10,26 @@
         tag.style.animationDelay = (0.62 + i * 0.05) + 's';
     });
 
+    // Lazy-load videos: swap data-src → src when near viewport
+    var videoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var video = entry.target;
+                var source = video.querySelector('source[data-src]');
+                if (source) {
+                    source.setAttribute('src', source.getAttribute('data-src'));
+                    source.removeAttribute('data-src');
+                    video.load();
+                }
+                videoObserver.unobserve(video);
+            }
+        });
+    }, { rootMargin: '200px 0px' });
+
+    document.querySelectorAll('video source[data-src]').forEach(function (source) {
+        videoObserver.observe(source.closest('video'));
+    });
+
     // Scroll reveal: skip elements already in viewport on load
     var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {

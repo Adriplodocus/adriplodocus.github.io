@@ -25,6 +25,8 @@ const translations = {
         'subnav-cs': 'Case studies',
 
         //Generics
+        'available-for-work': 'Available for work',
+        'download-cv': 'Download CV',
         'check-on-github': 'View on Github',
         'oct-contribution': 'My contribution',
         'th-contribution': 'My contribution',
@@ -158,6 +160,8 @@ const translations = {
         'subnav-cs': 'Pruebas',
 
         //Generics
+        'available-for-work': 'Disponible para trabajar',
+        'download-cv': 'Descargar CV',
         'check-on-github': 'Ver en Github',
         'oct-contribution': 'Mi contribución',
         'th-contribution': 'Mi contribución',
