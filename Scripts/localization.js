@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
     'en': {
         //Nav.
         'nav-home-title': 'Home',
@@ -61,11 +61,11 @@ const translations = {
         'exp-p3': 'My goal is to create unique and profitable experiences through player data analysis and the implementation of innovative game systems.',
         
         //Hero stats.
-        ‘hero-stats-titles-label’: ‘published titles’,
+        'hero-stats-titles-label': 'published titles',
 
         //Kindness.
-        ‘want-to-know-more’: ‘Want to know more?’,
-        ‘reach-out’: ‘I’m always open to conversations about my work, background, or collaborations. Feel free to reach out!’,
+        'want-to-know-more': 'Want to know more?',
+        'reach-out': 'I\'m always open to conversations about my work, background, or collaborations. Feel free to reach out!',
         
         //CV.
         'cv-img-alt': 'Curriculum Vitae',
@@ -86,12 +86,12 @@ const translations = {
         //Don't get any closer.
         'dgac-itch-title': 'Don\'t Get Any Closer itch.io link',
         'dgac-desc1': 'GameJam project that challenges players to prevent skeletons from reaching the castle gates by quickly pressing the inputs displayed above their heads. One of the main constraints was that the match could not exceed 20 seconds, which pushed us to design a fast and engaging experience that delivers immediate tension and reward.',
-        'dgac-desc2': 'During the project, I also had the opportunity to mentor a junior developer. I’m proud of how much they grew during the process and of the project we managed to create.',
+        'dgac-desc2': 'During the project, I also had the opportunity to mentor a junior developer. I\'m proud of how much they grew during the process and of the project we managed to create.',
         
         //Geometric wars.
         'gw-desc1': 'With this project I wanted to dive into developing a game from the conception of the idea all the way to publishing it on a store.',
         'gw-desc2': 'The player controls a ship tasked with defending their planet from an attack. I focused on creating quick matches, aiming for a gameplay loop that feels tight and satisfying. I chose to publish it on Android to make it more accessible and reach a wider audience.',
-        'gw-desc3': 'I’m especially proud of the enemy behavior system. It was designed in a way that allows me to easily create new enemies.',
+        'gw-desc3': 'I\'m especially proud of the enemy behavior system. It was designed in a way that allows me to easily create new enemies.',
         
         //Guys that run.
         'gtr-desc1': 'Two players compete in a battle to be the last one standing. While running, they must use their blasters to disrupt the other player and claim victory.',
@@ -115,7 +115,7 @@ const translations = {
         //Tools.
         'tools-h1': 'Tools',
         'tools-op-h2': 'Object Pool',
-        'tools-op-p1': 'Streamlines object instantiation and management through Unity’s built-in object pooling system. It allows developers to configure efficient pooling with minimal setup.',
+        'tools-op-p1': 'Streamlines object instantiation and management through Unity\'s built-in object pooling system. It allows developers to configure efficient pooling with minimal setup.',
         'tools-cst-h2': 'Code Snippet Timer',
         'tools-cst-p1': 'Measures the execution time of code snippets, allowing small performance tests for features added through code.',
         'tools-t-h2': 'Tickets',
