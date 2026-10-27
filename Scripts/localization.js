@@ -22,6 +22,7 @@
         'subnav-eduzland': 'eduZland',
         'subnav-tools': 'Tools',
         'subnav-pp': 'Personal projects',
+        'subnav-vc': 'Vibecoded',
         'subnav-cs': 'Case studies',
 
         //Generics
@@ -35,6 +36,7 @@
         'eduzland-contribution': 'My contribution',
         'try-it-out-pc': 'Try it out! (Pc)',
         'try-it-out': 'Try it out! (Pc, mobile)',
+        'try-it-out-web': 'Try it out! (Web)',
 
         //Titles. 
         'index-title': 'Adrián DG. Game and application developer',
@@ -98,9 +100,22 @@
         'hf-desc1': 'Two players must fight to be the last one standing on the platform. There are two characters available to use in order to make the other player fall off the platform. The game includes several power-ups, and players must also pay attention to their surroundings, as the environment will disappear over time.',
         'hf-desc2': 'This game was developed during a GameJam. High Five received the awards for best game and art direction. The game was developed by a team of six people',
         
-        //Pokémon team visualizer.
-        'pkmn-desc1': 'I created this tool to solve a common problem among Pokémon streamers: displaying their team overlay in OBS. The tool was built using Python.',
-        'pkmn-desc2': 'Manually configuring the layout in OBS was time-consuming and fragile, since any small adjustment could break the layout. With this tool I was able to make the process faster and more reliable.',
+        //Vibecoded projects.
+        'vc-intro1': 'Real products, live in production, built by directing AI agents (Claude Code) from the first idea to deployment.',
+        'vc-intro2': 'I act as the technical lead: I define the product and the architecture, write the specs, break the work into plans, review every change and decide what ships. The AI writes the code; the decisions are mine.',
+        'vc-cromos-h2': 'Pokémon Card Collection',
+        'vc-cromos-desc1': 'A Twitch channel-points minigame: viewers redeem rewards, gift subs, bits or donations to open packs of Pokémon cards and build their collection, with an album, trading, a marketplace, achievements and an OBS overlay that reveals each pack live on stream.',
+        'vc-cromos-desc2': 'It runs on a Cloudflare Worker (Hono) with a D1 database, Twitch login and EventSub webhooks, PayPal payments, browser push notifications and an admin panel whose settings are editable from Google Sheets. Covered by tests on the Workers runtime.',
+        'vc-counters-desc1': 'Counter manager for streamers (deaths, wins, attempts…) displayed live in OBS. Counters can be driven from the dashboard, chat commands, channel-point redemptions or a Stream Deck, and reset automatically when the stream starts.',
+        'vc-counters-desc2': 'Built with Next.js on Cloudflare\'s edge runtime and D1, with real-time updates via Server-Sent Events, a chat bot, automatic stream markers and clips, and a companion Electron desktop app for global hotkeys.',
+        'vc-locke-desc1': 'A web app that lets Pokémon streamers build their OBS overlays (team, badges, graveyard for Nuzlocke runs) and keep them updated live during the stream.',
+        'vc-locke-desc2': 'It started in 2023 as a Python tool and was rebuilt as a full web app: Cloudflare Pages Functions, D1, Twitch and Google login, a Twitch chat bot and real-time sync between devices with Ably.',
+        'vc-loop-desc1': 'Shows which Twitch channels you follow that don\'t follow you back, whether they are live and when they last streamed, with inactivity filters and a snapshot-based unfollow detector.',
+        'vc-loop-desc2': 'A client-side React app on the Twitch Helix API with read-only permissions: no data is stored on any server.',
+        'vc-timers-desc1': 'An interval-training timer: create routines (for example 25s of work and 15s of rest, repeated) and run them from any device.',
+        'vc-timers-desc2': 'Google login and routines stored in Cloudflare D1, served by a single Cloudflare Worker.',
+        'vc-mrk-desc1': 'The website for my streaming channel: live status, latest clips, follower milestones, the weekly schedule converted to each visitor\'s timezone and a hidden mini-game.',
+        'vc-mrk-desc2': 'Plain HTML, CSS and JS on Cloudflare Pages with Workers and KV, edge caching to keep reads low, and a public API (schedule, logo) consumed by my other apps.',
         
         //Case studies.
         'case-studies-desc1': 'Projects developed as tests for companies. They focus on maintaining a simple architecture, scalability, and production-ready standards.',
@@ -160,6 +175,7 @@
         'subnav-eduzland': 'eduZland',
         'subnav-tools': 'Herramientas',
         'subnav-pp': 'Proyectos personales',
+        'subnav-vc': 'Vibecoded',
         'subnav-cs': 'Pruebas',
 
         //Generics
@@ -173,6 +189,7 @@
         'eduzland-contribution': 'Mi contribución',
         'try-it-out-pc': '¡Pruébalo! (Pc)',
         'try-it-out': '¡Pruébalo! (Pc, móvil)',
+        'try-it-out-web': '¡Pruébalo! (Web)',
 
         //Titles. 
         'index-title': 'Adrián DG. Desarrollador de videojuegos y aplicaciones',
@@ -235,9 +252,22 @@
         'hf-desc1': 'Dos jugadores tienen que luchar para ser el último en pie sobre la plataforma. Hay dos personajes disponibles para usar con el fin de hacer que el otro jugador se caiga de la plataforma. El juego incluye varios potenciadores y los jugadores también tendrán que prestar atención a su entorno, ya que irá desapareciendo a medida que pase el tiempo.',
         'hf-desc2': 'Este juego fue desarrollado durante una GameJam. High Five recibió el premio al mejor juego y dirección de arte. El juego fue desarrollado por un equipo de seis personas',
         
-        //Pokémon team visualizer.
-        'pkmn-desc1': 'Creé esta herramienta para solucionar un problema común entre streamers de pokémon: mostrar el overlay de su equipo en OBS. La herramienta fue construida usando Python.',
-        'pkmn-desc2': 'Configurar manualmente el diseño en OBS consumía tiempo y era frágil, ya que cualquier pequeño ajuste podían romper el layout. Gracias a esta herramienta pude hacer que el proceso fuera más rápido y fiable.',
+        //Vibecoded projects.
+        'vc-intro1': 'Productos reales, en producción, construidos dirigiendo agentes de IA (Claude Code) desde la primera idea hasta el despliegue.',
+        'vc-intro2': 'Mi papel es el de líder técnico: defino el producto y la arquitectura, escribo las especificaciones, divido el trabajo en planes, reviso cada cambio y decido qué se publica. La IA escribe el código; las decisiones son mías.',
+        'vc-cromos-h2': 'Colección de cromos Pokémon',
+        'vc-cromos-desc1': 'Un minijuego de puntos de canal de Twitch: los viewers canjean recompensas, regalan subs, bits o donaciones para abrir sobres de cartas Pokémon y completar su colección, con álbum, intercambios, mercado, logros y un overlay de OBS que revela cada sobre en directo.',
+        'vc-cromos-desc2': 'Funciona sobre un Cloudflare Worker (Hono) con base de datos D1, login con Twitch y webhooks de EventSub, pagos con PayPal, notificaciones push del navegador y un panel de administración configurable desde Google Sheets. Cubierto con tests en el runtime de Workers.',
+        'vc-counters-desc1': 'Gestor de contadores para streamers (muertes, victorias, intentos…) que se muestran en directo en OBS. Se controlan desde el dashboard, comandos de chat, canjes de puntos de canal o un Stream Deck, y se reinician solos al empezar el directo.',
+        'vc-counters-desc2': 'Hecho con Next.js en el edge runtime de Cloudflare y D1, con actualizaciones en tiempo real mediante Server-Sent Events, bot de chat, marcadores y clips automáticos, y una app de escritorio en Electron para atajos de teclado globales.',
+        'vc-locke-desc1': 'Una web que permite a los streamers de Pokémon montar sus overlays de OBS (equipo, medallas, cementerio para Nuzlockes) y mantenerlos actualizados en directo durante el stream.',
+        'vc-locke-desc2': 'Empezó en 2023 como una herramienta en Python y se rehízo como una web completa: Cloudflare Pages Functions, D1, login con Twitch y Google, bot de chat de Twitch y sincronización en tiempo real entre dispositivos con Ably.',
+        'vc-loop-desc1': 'Muestra qué canales de Twitch sigues que no te siguen de vuelta, si están en directo y cuándo fue su último stream, con filtros de inactividad y un detector de unfollows basado en snapshots.',
+        'vc-loop-desc2': 'Una app React que funciona solo en el navegador sobre la API Helix de Twitch, con permisos de solo lectura: no guarda datos en ningún servidor.',
+        'vc-timers-desc1': 'Un temporizador de entrenamiento por intervalos: crea rutinas (por ejemplo 25s de ejercicio y 15s de descanso, repetidos) y ejecútalas desde cualquier dispositivo.',
+        'vc-timers-desc2': 'Login con Google y rutinas guardadas en Cloudflare D1, servidas por un único Cloudflare Worker.',
+        'vc-mrk-desc1': 'La web de mi canal de streaming: estado en directo, últimos clips, hitos de seguidores, el horario semanal convertido a la zona horaria de cada visitante y un minijuego oculto.',
+        'vc-mrk-desc2': 'HTML, CSS y JS puros en Cloudflare Pages con Workers y KV, caché en el edge para reducir lecturas y una API pública (horario, logo) que consumen mis otras apps.',
         
         //Case studies.
         'case-studies-desc1': 'Proyectos desarrollados como pruebas para empresas. Se centran en mantener una arquitectura simple, escalabilidad y estándares listos para producción.',

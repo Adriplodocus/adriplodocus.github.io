@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title data-i18n="portfolio-title">Adrián DG. Vibecoded projects</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!--META-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Production web apps built by Adrián Durán directing AI agents: Pokémon card collection, Stream Counters, Locke+, Mutuals and more.">
+
+        <!--Open Graph-->
+        <meta property="og:type"        content="website">
+        <meta property="og:url"         content="https://adriplodocus.github.io/VibecodedProjects.html">
+        <meta property="og:title"       content="Portfolio — Adrián Durán">
+        <meta property="og:description" content="Production web apps built by Adrián Durán directing AI agents: Pokémon card collection, Stream Counters, Locke+, Mutuals and more.">
+        <meta property="og:image"       content="https://adriplodocus.github.io/Imgs/GamesCaptures/Vibecoded/Cromos.webp">
+        <meta name="twitter:card"       content="summary_large_image">
+        <link rel="canonical"           href="https://adriplodocus.github.io/VibecodedProjects.html">
+
+        <meta name="theme-color" content="#0d0d11">
+        <link rel="preload" href="Fonts/Louis.ttf" as="font" type="font/ttf" crossorigin>
+        <!--CSS REFS-->
+        <link rel="stylesheet" type="text/css" href="Style/style.css">
+        <script src="Scripts/localization.js"></script>
+    </head>
+
+    <body>
+        <!--Top of page-->
+        <header id="header"></header>
+        <script src="Scripts/header.js"></script>
+
+        <nav id="div_games"></nav>
+        <script src="Scripts/subnav.js"></script>
+
+        <!--Page content-->
+        <main>
+            <section class="contentDiv" data-reveal>
+                <p data-i18n="vc-intro1">Real products, live in production, built by directing AI agents (Claude Code) from the first idea to deployment.</p>
+                <p data-i18n="vc-intro2">I act as the technical lead: I define the product and the architecture, write the specs, break the work into plans, review every change and decide what ships. The AI writes the code; the decisions are mine.</p>
+            </section>
+
+            <!--Pokémon card collection-->
+            <section class="contentDiv" data-reveal>
+                <h2 data-i18n="vc-cromos-h2">Pokémon Card Collection</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">TypeScript</span>
+                    <span class="stack-tag">Cloudflare Workers</span>
+                    <span class="stack-tag">Hono</span>
+                    <span class="stack-tag">D1</span>
+                    <span class="stack-tag">Vite</span>
+                    <span class="stack-tag">Twitch EventSub</span>
+                    <span class="stack-tag">Web Push</span>
+                </div>
+                <div class="imgBlock">
+                    <img class="gameCapture" loading="lazy" src="Imgs/GamesCaptures/Vibecoded/Cromos.webp" alt="Pokémon Card Collection" width="1280" height="800">
+                </div>
+
+                <p data-i18n="vc-cromos-desc1">A Twitch channel-points minigame: viewers redeem rewards, gift subs, bits or donations to open packs of Pokémon cards and build their collection, with an album, trading, a marketplace, achievements and an OBS overlay that reveals each pack live on stream.</p>
+                <p data-i18n="vc-cromos-desc2">It runs on a Cloudflare Worker (Hono) with a D1 database, Twitch login and EventSub webhooks, PayPal payments, browser push notifications and an admin panel whose settings are editable from Google Sheets. Covered by tests on the Workers runtime.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://cromos.mrklypp.com/" title="Pokémon Card Collection" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+
+            <!--Stream Counters-->
+            <section class="contentDiv" data-reveal>
+                <h2>Stream Counters</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">TypeScript</span>
+                    <span class="stack-tag">Next.js</span>
+                    <span class="stack-tag">Cloudflare Pages</span>
+                    <span class="stack-tag">D1</span>
+                    <span class="stack-tag">Twitch EventSub</span>
+                    <span class="stack-tag">Electron</span>
+                </div>
+                <div class="imgBlock">
+                    <img class="gameCapture" loading="lazy" src="Imgs/GamesCaptures/Vibecoded/StreamCounters.webp" alt="Stream Counters" width="1280" height="800">
+                </div>
+
+                <p data-i18n="vc-counters-desc1">Counter manager for streamers (deaths, wins, attempts…) displayed live in OBS. Counters can be driven from the dashboard, chat commands, channel-point redemptions or a Stream Deck, and reset automatically when the stream starts.</p>
+                <p data-i18n="vc-counters-desc2">Built with Next.js on Cloudflare's edge runtime and D1, with real-time updates via Server-Sent Events, a chat bot, automatic stream markers and clips, and a companion Electron desktop app for global hotkeys.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://streamcounters.mrklypp.com/" title="Stream Counters" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+
+            <!--Locke+-->
+            <section class="contentDiv" data-reveal>
+                <h2>Locke+ (Pokémon Team Visualizer)</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">JavaScript</span>
+                    <span class="stack-tag">Cloudflare Pages</span>
+                    <span class="stack-tag">D1</span>
+                    <span class="stack-tag">Ably</span>
+                    <span class="stack-tag">Twitch API</span>
+                </div>
+                <div class="imgBlock">
+                    <img class="gameCapture" loading="lazy" src="Imgs/GamesCaptures/Vibecoded/LockePlus.webp" alt="Locke+" width="1280" height="800">
+                </div>
+
+                <p data-i18n="vc-locke-desc1">A web app that lets Pokémon streamers build their OBS overlays (team, badges, graveyard for Nuzlocke runs) and keep them updated live during the stream.</p>
+                <p data-i18n="vc-locke-desc2">It started in 2023 as a Python tool and was rebuilt as a full web app: Cloudflare Pages Functions, D1, Twitch and Google login, a Twitch chat bot and real-time sync between devices with Ably.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://pokemon.mrklypp.com/" title="Locke+" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+
+            <!--Mutuals-->
+            <section class="contentDiv" data-reveal>
+                <h2>Mutuals</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">TypeScript</span>
+                    <span class="stack-tag">React</span>
+                    <span class="stack-tag">Vite</span>
+                    <span class="stack-tag">Twitch Helix API</span>
+                    <span class="stack-tag">Cloudflare Pages</span>
+                </div>
+                <p data-i18n="vc-loop-desc1">Shows which Twitch channels you follow that don't follow you back, whether they are live and when they last streamed, with inactivity filters and a snapshot-based unfollow detector.</p>
+                <p data-i18n="vc-loop-desc2">A client-side React app on the Twitch Helix API with read-only permissions: no data is stored on any server.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://mutuals.mrklypp.com/" title="Mutuals" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+
+            <!--Interval Timer-->
+            <section class="contentDiv" data-reveal>
+                <h2>Interval Timer</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">JavaScript</span>
+                    <span class="stack-tag">Cloudflare Workers</span>
+                    <span class="stack-tag">D1</span>
+                    <span class="stack-tag">Google OAuth</span>
+                    <span class="stack-tag">PWA</span>
+                </div>
+                <p data-i18n="vc-timers-desc1">An interval-training timer: create routines (for example 25s of work and 15s of rest, repeated) and run them from any device.</p>
+                <p data-i18n="vc-timers-desc2">Google login and routines stored in Cloudflare D1, served by a single Cloudflare Worker.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://timers.mrklypp.com/" title="Interval Timer" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+
+            <!--MrKlypp-->
+            <section class="contentDiv" data-reveal>
+                <h2>mrklypp.com</h2>
+                <hr class="hSeparator"/>
+                <div class="project-meta">
+                    <span class="badge badge-vibecoded">Vibecoded</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">JavaScript</span>
+                    <span class="stack-tag">Cloudflare Pages</span>
+                    <span class="stack-tag">Workers</span>
+                    <span class="stack-tag">KV</span>
+                    <span class="stack-tag">Twitch Helix API</span>
+                </div>
+                <div class="imgBlock">
+                    <img class="gameCapture" loading="lazy" src="Imgs/GamesCaptures/Vibecoded/MrKlypp.webp" alt="mrklypp.com" width="1280" height="800">
+                </div>
+
+                <p data-i18n="vc-mrk-desc1">The website for my streaming channel: live status, latest clips, follower milestones, the weekly schedule converted to each visitor's timezone and a hidden mini-game.</p>
+                <p data-i18n="vc-mrk-desc2">Plain HTML, CSS and JS on Cloudflare Pages with Workers and KV, edge caching to keep reads low, and a public API (schedule, logo) consumed by my other apps.</p>
+                <p style="text-align: center;">
+                    <a class="link" href="https://mrklypp.com/" title="mrklypp.com" target="_blank" rel="noopener" style="text-decoration: underline;" data-i18n="try-it-out-web">Try it out! (Web)</a>
+                </p>
+            </section>
+        </main>
+
+        <!--Page ending-->
+        <footer id="footer"></footer>
+        <script src="Scripts/footer.js"></script>
+        <script src="Scripts/animations.js" defer></script>
+    </body>
+</html>

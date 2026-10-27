@@ -596,6 +596,7 @@ footer a:hover, .footer a:hover {
 .badge-gamejam       { background: rgba(139,  92, 246, 0.12); color: #a78bfa; }
 .badge-tool          { background: rgba( 56, 189, 248, 0.12); color: #7dd3fc; }
 .badge-company-test  { background: rgba( 52, 211, 153, 0.12); color: #6ee7b7; }
+.badge-vibecoded     { background: rgba(244, 114, 182, 0.12); color: #f9a8d4; }
 
 .project-stack {
     display: flex;
