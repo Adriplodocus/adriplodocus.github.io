@@ -484,6 +484,7 @@ main {
 
 .gameCapture,
 .documentImg {
+    pointer-events: auto;
     cursor: zoom-in;
 }
 
