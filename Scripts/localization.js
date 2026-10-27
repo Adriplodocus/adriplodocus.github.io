@@ -101,8 +101,6 @@
         'hf-desc2': 'This game was developed during a GameJam. High Five received the awards for best game and art direction. The game was developed by a team of six people',
         
         //Vibecoded projects.
-        'vc-intro1': 'Real products, live in production, built by directing AI agents (Claude Code) from the first idea to deployment.',
-        'vc-intro2': 'I act as the technical lead: I define the product and the architecture, write the specs, break the work into plans, review every change and decide what ships. The AI writes the code; the decisions are mine.',
         'vc-cromos-h2': 'Pokémon Card Collection',
         'vc-cromos-desc1': 'A Twitch channel-points minigame: viewers redeem rewards, gift subs, bits or donations to open packs of Pokémon cards and build their collection, with an album, trading, a marketplace, achievements and an OBS overlay that reveals each pack live on stream.',
         'vc-cromos-desc2': 'It runs on a Cloudflare Worker (Hono) with a D1 database, Twitch login and EventSub webhooks, PayPal payments, browser push notifications and an admin panel whose settings are editable from Google Sheets. Covered by tests on the Workers runtime.',
@@ -253,8 +251,6 @@
         'hf-desc2': 'Este juego fue desarrollado durante una GameJam. High Five recibió el premio al mejor juego y dirección de arte. El juego fue desarrollado por un equipo de seis personas',
         
         //Vibecoded projects.
-        'vc-intro1': 'Productos reales, en producción, construidos dirigiendo agentes de IA (Claude Code) desde la primera idea hasta el despliegue.',
-        'vc-intro2': 'Mi papel es el de líder técnico: defino el producto y la arquitectura, escribo las especificaciones, divido el trabajo en planes, reviso cada cambio y decido qué se publica. La IA escribe el código; las decisiones son mías.',
         'vc-cromos-h2': 'Colección de cromos Pokémon',
         'vc-cromos-desc1': 'Un minijuego de puntos de canal de Twitch: los viewers canjean recompensas, regalan subs, bits o donaciones para abrir sobres de cartas Pokémon y completar su colección, con álbum, intercambios, mercado, logros y un overlay de OBS que revela cada sobre en directo.',
         'vc-cromos-desc2': 'Funciona sobre un Cloudflare Worker (Hono) con base de datos D1, login con Twitch y webhooks de EventSub, pagos con PayPal, notificaciones push del navegador y un panel de administración configurable desde Google Sheets. Cubierto con tests en el runtime de Workers.',
