@@ -16,6 +16,8 @@
         'subnav-tools-title': 'Tools',
 
         //Subnav
+        'subnav-group-company': 'Company projects',
+        'subnav-group-own': 'Own work',
         'subnav-oct': 'OC: Tycoon',
         'subnav-th': 'Tiny Hunters',
         'subnav-ctr': 'Cut the Rope',
@@ -167,6 +169,8 @@
         'subnav-tools-title': 'Herramientas',
 
         //Subnav
+        'subnav-group-company': 'Proyectos en empresas',
+        'subnav-group-own': 'Trabajo propio',
         'subnav-oct': 'OC: Tycoon',
         'subnav-th': 'Tiny Hunters',
         'subnav-ctr': 'Cut the Rope',
