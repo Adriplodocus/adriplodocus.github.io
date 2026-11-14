@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volumen en Unity: por qué usar Log10</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1f; --muted: #6b6b70;
+    --line: #e3e1da; --log: #2f6fdb; --lin: #d9622b; --ok: #2e8b57;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161618; --card: #1f1f22; --ink: #ececee; --muted: #9a9aa0; --line: #333338; --log: #6ea1ff; --lin: #ff8a52; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 20px 48px; }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-bottom: 20px; }
+  canvas { width: 100%; height: 340px; display: block; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .9rem; color: var(--muted); margin-top: 8px; }
+  .legend span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; background: currentColor; }
+  .legend .l-log { color: var(--log); } .legend .l-lin { color: var(--lin); }
+  .slider-row { display: flex; align-items: center; gap: 14px; }
+  input[type=range] { flex: 1; accent-color: var(--log); height: 28px; }
+  .val { font-variant-numeric: tabular-nums; min-width: 64px; text-align: right; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .box h3 { margin: 0 0 8px; font-size: .95rem; }
+  .box.log h3 { color: var(--log); } .box.lin h3 { color: var(--lin); }
+  .big { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .small { color: var(--muted); font-size: .85rem; }
+  .bar { height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; margin-top: 8px; }
+  .bar > div { height: 100%; width: 0; }
+  .box.log .bar > div { background: var(--log); } .box.lin .bar > div { background: var(--lin); }
+  .listen { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 16px; }
+  button { font: inherit; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+  button.on { border-color: currentColor; font-weight: 600; }
+  #btnLog.on { color: var(--log); } #btnLin.on { color: var(--lin); }
+  pre { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 14px; overflow-x: auto; font-size: .88rem; margin: 10px 0 0; }
+  code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; }
+  ul { padding-left: 20px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Volumen en Unity: por qué usar Log10</h1>
+  <p class="lead">El Audio Mixer trabaja en decibelios (dB), una escala logarítmica. Mueve el slider y compara qué le llega al mixer con cada método.</p>
+
+  <div class="card">
+    <div class="slider-row">
+      <label for="s"><strong>Slider</strong></label>
+      <input id="s" type="range" min="0.0001" max="1" step="0.0001" value="0.5">
+      <span class="val" id="sv">0.50</span>
+    </div>
+
+    <div class="grid">
+      <div class="box log">
+        <h3>Con Log10 (correcto)</h3>
+        <div class="big" id="dbLog">-6.0 dB</div>
+        <div class="small">Mathf.Log10(valor) * 20</div>
+        <div class="small" id="ampLog">Amplitud: 50%</div>
+        <div class="bar"><div id="barLog"></div></div>
+      </div>
+      <div class="box lin">
+        <h3>Slider directo de -80 a 0</h3>
+        <div class="big" id="dbLin">-40.0 dB</div>
+        <div class="small">-80 + valor * 80</div>
+        <div class="small" id="ampLin">Amplitud: 1%</div>
+        <div class="bar"><div id="barLin"></div></div>
+      </div>
+    </div>
+
+    <div class="listen">
+      <span class="small">Escúchalo (baja antes el volumen del ordenador):</span>
+      <button id="btnLog">▶ Con Log10</button>
+      <button id="btnLin">▶ Directo en dB</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <canvas id="c"></canvas>
+    <div class="legend"><span class="l-log">Con Log10</span><span class="l-lin">Slider directo de -80 a 0</span></div>
+  </div>
+
+  <div class="card">
+    <strong>Qué está pasando</strong>
+    <ul>
+      <li>Cada -20 dB el sonido se reduce a la décima parte. A -40 dB queda un 1%, y casi no se oye.</li>
+      <li>Si el slider va de -80 a 0 directamente, toda la mitad izquierda está por debajo de -40 dB: es recorrido "muerto".</li>
+      <li>Con Log10, el slider va de 0.0001 a 1 y la caída fuerte queda en el primer tramo. El resto baja de forma gradual, como lo percibe el oído.</li>
+      <li>El mínimo es 0.0001 y no 0 porque el logaritmo de 0 no existe (daría -infinito). 0.0001 equivale justo a -80 dB.</li>
+    </ul>
+<pre><code>private void SetMixerVolume(string parameter, float vol)
+{
+    // vol va de 0.0001 a 1
+    _masterAudioMixer.SetFloat(parameter, Mathf.Log10(vol) * 20);
+}</code></pre>
+  </div>
+</main>
+
+<script>
+(function () {
+  const s = document.getElementById('s');
+  const c = document.getElementById('c');
+  const ctx = c.getContext('2d');
+  const toDbLog = v => 20 * Math.log10(v);
+  const toDbLin = v => -80 + v * 80;
+  const amp = db => Math.pow(10, db / 20);
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  function fmtPct(a) {
+    const p = a * 100;
+    return p >= 10 ? p.toFixed(0) + '%' : p >= 1 ? p.toFixed(1) + '%' : p.toFixed(2) + '%';
+  }
+
+  function draw() {
+    const dpr = window.devicePixelRatio || 1;
+    const w = c.clientWidth, h = c.clientHeight;
+    c.width = w * dpr; c.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+
+    const pad = { l: 52, r: 16, t: 14, b: 40 };
+    const pw = w - pad.l - pad.r, ph = h - pad.t - pad.b;
+    const X = v => pad.l + v * pw;
+    const Y = db => pad.t + (-db / 80) * ph;
+
+    // Rejilla y ejes
+    ctx.font = '12px system-ui, sans-serif';
+    ctx.fillStyle = css('--muted'); ctx.strokeStyle = css('--line'); ctx.lineWidth = 1;
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    for (let db = 0; db >= -80; db -= 20) {
+      ctx.beginPath(); ctx.moveTo(pad.l, Y(db)); ctx.lineTo(w - pad.r, Y(db)); ctx.stroke();
+      ctx.fillText(db + ' dB', pad.l - 8, Y(db));
+    }
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    for (let i = 0; i <= 10; i += 2) {
+      const v = i / 10;
+      ctx.fillText(v.toFixed(1), X(v), h - pad.b + 8);
+    }
+    ctx.fillText('Posición del slider', pad.l + pw / 2, h - 16);
+
+    // Zona casi inaudible
+    ctx.fillStyle = css('--line'); ctx.globalAlpha = 0.45;
+    ctx.fillRect(pad.l, Y(-40), pw, Y(-80) - Y(-40));
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = css('--muted'); ctx.textAlign = 'left';
+    ctx.fillText('Casi no se oye (< -40 dB)', w - pad.r - 170, Y(-76));
+
+    // Curvas
+    function curve(fn, color) {
+      ctx.strokeStyle = color; ctx.lineWidth = 2.5; ctx.beginPath();
+      for (let i = 0; i <= 400; i++) {
+        const v = Math.max(0.0001, i / 400);
+        const db = Math.max(-80, fn(v));
+        i ? ctx.lineTo(X(v), Y(db)) : ctx.moveTo(X(v), Y(db));
+      }
+      ctx.stroke();
+    }
+    curve(toDbLin, css('--lin'));
+    curve(toDbLog, css('--log'));
+
+    // Posición actual
+    const v = parseFloat(s.value);
+    ctx.strokeStyle = css('--muted'); ctx.setLineDash([4, 4]);
+    ctx.beginPath(); ctx.moveTo(X(v), pad.t); ctx.lineTo(X(v), pad.t + ph); ctx.stroke();
+    ctx.setLineDash([]);
+    [[toDbLog(v), css('--log')], [toDbLin(v), css('--lin')]].forEach(([db, col]) => {
+      ctx.fillStyle = col; ctx.beginPath(); ctx.arc(X(v), Y(Math.max(-80, db)), 6, 0, Math.PI * 2); ctx.fill();
+    });
+  }
+
+  // Audio
+  let actx = null, osc = null, gain = null, mode = null;
+  const btnLog = document.getElementById('btnLog'), btnLin = document.getElementById('btnLin');
+
+  function targetGain() {
+    const v = parseFloat(s.value);
+    const db = mode === 'log' ? toDbLog(v) : toDbLin(v);
+    return amp(db) * 0.25; // margen para no saturar
+  }
+  function stop() {
+    if (osc) { try { osc.stop(); } catch (e) {} osc = null; }
+    mode = null; btnLog.classList.remove('on'); btnLin.classList.remove('on');
+    btnLog.textContent = '▶ Con Log10'; btnLin.textContent = '▶ Directo en dB';
+  }
+  function play(m) {
+    if (mode === m) { stop(); return; }
+    stop();
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+      actx.resume();
+      gain = actx.createGain();
+      osc = actx.createOscillator();
+      osc.type = 'triangle'; osc.frequency.value = 440;
+      mode = m;
+      gain.gain.value = targetGain();
+      osc.connect(gain).connect(actx.destination);
+      osc.start();
+      const b = m === 'log' ? btnLog : btnLin;
+      b.classList.add('on'); b.textContent = '■ Parar';
+    } catch (e) { stop(); }
+  }
+  btnLog.addEventListener('click', () => play('log'));
+  btnLin.addEventListener('click', () => play('lin'));
+
+  function update() {
+    const v = parseFloat(s.value);
+    const dl = toDbLog(v), dn = toDbLin(v);
+    document.getElementById('sv').textContent = v.toFixed(v < 0.01 ? 4 : 2);
+    document.getElementById('dbLog').textContent = dl.toFixed(1) + ' dB';
+    document.getElementById('dbLin').textContent = dn.toFixed(1) + ' dB';
+    document.getElementById('ampLog').textContent = 'Se oye al ' + fmtPct(amp(dl)) + ' de amplitud';
+    document.getElementById('ampLin').textContent = 'Se oye al ' + fmtPct(amp(dn)) + ' de amplitud';
+    document.getElementById('barLog').style.width = (amp(dl) * 100) + '%';
+    document.getElementById('barLin').style.width = (amp(dn) * 100) + '%';
+    if (osc && gain) gain.gain.setTargetAtTime(targetGain(), actx.currentTime, 0.02);
+    draw();
+  }
+  s.addEventListener('input', update);
+  window.addEventListener('resize', draw);
+  update();
+})();
+</script>
+</body>
+</html>
